@@ -4,20 +4,25 @@
 #include "cJSON.h"
 /* 用于提供 SDK开发API列表 */
 
+/* 配置 */
+// 版本号
+#define SOFT_VERSION "WS010407" // todo 目前该参数无效 后续把lib里使用的版本号改成入参
+// #define HARD_VERSION "ATOM002"  // todo 目前该参数无效 后续把lib里使用的版本号改成入参
 
 /* 休眠 */
 #define CONFIG_SLEEP_TIMEOUT_SEC 120
 #define SLEEP_TIME CONFIG_SLEEP_TIMEOUT_SEC * 1000 * 1000
 
+// 添加一个新的枚举类型定义
 typedef enum {
-    ACTIVED_MODE_SERVER_VAD = 0,           /**< Activate by server-side Voice Activity Detection */
-    ACTIVED_MODE_BUTTON,                   /**< Activate by button press */
-    ACTIVED_MODE_BUTTON_AND_WAKEUP,        /**< Activate by either button press or wake word */
-    ACTIVED_MODE_SERVER_VAD_AND_WAKEUP,    /**< Activate by either server-side VAD or wake word */
-} activate_mode_t;
+    SDK_ACTIVED_MODE_SERVER_VAD = 0,
+    SDK_ACTIVED_MODE_BUTTON,
+    SDK_ACTIVED_MODE_BUTTON_AND_WAKEUP,
+    SDK_ACTIVED_MODE_SERVER_VAD_AND_WAKEUP,
+} sdk_actived_mode_t;
 
 /* 初始化 */
-void sdk_init(const char* hard_version, const char* soft_version, activate_mode_t activate_mode);
+void sdk_init(const char* hard_version, const char* soft_version, sdk_actived_mode_t actived_mode);
 
 /* 获取版本信息 */
 const char* sdk_get_hardware_version(void);

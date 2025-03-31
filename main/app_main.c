@@ -57,7 +57,6 @@ void init_board()
     audio_board_handle = audio_board_init();
     audio_hal_ctrl_codec(audio_board_handle->audio_hal, AUDIO_HAL_CODEC_MODE_BOTH, AUDIO_HAL_CTRL_START);
 
-    es8311_set_mic_gain(0);
     uint8_t volume;
     user_storage_load_volume(&volume, DEFAULT_VOLUME);
     ESP_LOGI(TAG, "volume: %d", volume);
@@ -93,7 +92,7 @@ void app_main(void)
     init_board();
 
     callback_init();
-    sdk_init(HARD_VERSION, SOFT_VERSION, ACTIVED_MODE_SERVER_VAD_AND_WAKEUP);
+    sdk_init(HARD_VERSION, SOFT_VERSION, SDK_ACTIVED_MODE_BUTTON_AND_WAKEUP);
     bool is_config_wifi = get_is_config_wifi();
     bool is_connected_wifi = get_wifi_is_connected();
 
