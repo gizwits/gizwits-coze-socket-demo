@@ -189,6 +189,8 @@ static void app_event_notify(user_event_t event, cJSON *json_data) {
 // Initialize callbacks during app startup
 void callback_init(void) {
     // Set up callbacks
+    // 端插件回调
     sdk_set_coze_plugin_notify_callback(app_plugin_notify);
+    // 用户事件回调
     sdk_set_user_event_notify_callback(app_event_notify);
 }

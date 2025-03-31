@@ -42,7 +42,7 @@ void user_set_volume(int vol) {
     if(vol > MAX_VOLUME) {
         vol = MAX_VOLUME;
     }
-    // audio_hal_set_volume(audio_board_handle->audio_hal, vol);
+    audio_hal_set_volume(audio_board_handle->audio_hal, vol);
     volume = vol;
     // 保存新的音量设置
     user_storage_save_volume(volume);
@@ -75,8 +75,6 @@ void init_board()
     audio_tone_init();
     audio_tone_play("spiffs://spiffs/converted_turn_on.mp3");
 }
-
-
 
 void app_main(void)
 {
