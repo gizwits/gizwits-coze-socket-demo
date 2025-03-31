@@ -1,0 +1,19 @@
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Error at /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/tools/cmake/build.cmake:268 (message):
+  Failed to resolve component 'periph_i2c'.
+Call Stack (most recent call first):
+  /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/tools/cmake/build.cmake:304 (__build_resolve_and_add_req)
+  /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/tools/cmake/build.cmake:607 (__build_expand_requirements)
+  /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:12 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

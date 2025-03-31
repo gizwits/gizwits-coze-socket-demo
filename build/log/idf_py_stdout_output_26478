@@ -1,0 +1,622 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490cc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (30) boot: Enabling RNG early entropy source...[0m
+[0;32mI (31) boot: Partition Table:[0m
+[0;32mI (31) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (32) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (33) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (34) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (35) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (36) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (37) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (44) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=79068h (495720) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=00099090 vaddr=3fc9cf00 size=06f88h ( 28552) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=13be70h (1293936) map[0m
+[0;32mI (322) esp_image: segment 3: paddr=001dbe98 vaddr=3fca3e88 size=013d0h (  5072) load[0m
+[0;32mI (323) esp_image: segment 4: paddr=001dd270 vaddr=40374000 size=18e10h (101904) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (356) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (356) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (356) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (357) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (357) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (358) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (358) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (359) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (360) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (361) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (361) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (363) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (363) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (363) esp_psram: Speed: 80MHz[0m
+[0;32mI (402) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (503) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (503) cpu_start: Multicore app[0m
+[0;32mI (826) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (835) cpu_start: Pro cpu start user code[0m
+[0;32mI (835) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (835) app_init: Application information:[0m
+[0;32mI (835) app_init: Project name:     main_app[0m
+[0;32mI (836) app_init: App version:      2[0m
+[0;32mI (836) app_init: Compile time:     Mar 31 2025 12:22:59[0m
+[0;32mI (837) app_init: ELF file SHA256:  54e1b93a9...[0m
+[0;32mI (838) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (838) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (839) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (840) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (840) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (841) heap_init: At 3FCA91F8 len 00040518 (257 KiB): RAM[0m
+[0;32mI (842) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (843) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (844) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (845) spi_flash: detected chip: gd[0m
+[0;32mI (846) spi_flash: flash io: qio[0m
+[0;32mI (846) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (847) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (848) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (849) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;31mE (850) esp_core_dump_flash: Incorrect size of core dump image: 10489344[0m
+[0;32mI (850) coexist: coex firmware version: 4482466[0m
+[0;32mI (851) coexist: coexist rom version e7ae62f[0m
+[0;32mI (852) main_task: Started on CPU0[0m
+[0;32mI (853) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (853) main_task: Calling app_main()[0m
+[0;31mE (860) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;33mW (860) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (861) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (862) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (868) DRV8311: ES8311 in Slave mode[0m
+[0;32mI (878) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (882) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (883) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (883) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (884) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (885) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (886) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (887) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (887) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (888) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (889) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (890) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (891) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (892) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (893) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (894) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (895) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (895) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (896) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (897) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (898) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (899) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (900) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (901) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (902) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (903) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (903) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (904) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (905) ES7210: ES7210 in Slave mode[0m
+[0;31mE (906) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (906) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (908) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (909) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (909) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (910) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (911) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (912) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (913) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (914) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (915) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (916) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (917) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (917) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (918) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (919) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (920) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (921) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (922) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (923) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (924) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (925) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (925) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (926) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (927) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (928) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (929) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (930) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (931) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (932) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (933) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (933) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (934) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (935) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (936) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (937) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (938) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (939) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (940) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (941) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (941) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (942) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (943) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (944) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (945) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (946) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (947) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (948) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (949) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (949) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (951) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (952) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (952) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (953) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (954) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (955) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (956) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (957) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (958) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (959) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (960) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (960) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (961) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (962) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (963) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (964) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (965) ES7210: Enable ES7210_INPUT_MIC1[0m
+[0;31mE (966) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (966) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (967) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (968) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (969) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (970) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (971) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (972) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (973) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (974) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (974) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (975) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (976) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (977) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (978) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (979) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (980) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (981) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (982) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (982) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (984) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (984) ES7210: Enable ES7210_INPUT_MIC2[0m
+[0;31mE (985) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (986) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (987) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (988) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (988) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (990) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (991) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (991) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (992) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (993) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (994) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (995) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (996) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (997) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (998) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (999) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (999) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1000) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1001) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1002) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1003) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (1004) ES7210: Enable ES7210_INPUT_MIC3[0m
+[0;31mE (1005) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1005) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1006) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1008) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1008) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1009) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1010) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1011) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1012) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1013) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1013) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1015) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1016) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1016) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1017) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1018) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1019) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1020) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1021) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1022) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1023) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1024) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1024) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1026) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1027) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1027) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1028) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (1026) ES7210: Enable TDM mode. ES7210_SDP_INTERFACE2_REG12: C[0m
+[0;31mE (1030) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1031) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1032) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1033) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1034) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1035) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1036) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1036) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1037) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1038) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1039) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1040) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1041) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1042) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1043) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1044) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1045) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1046) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1047) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1047) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1048) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1049) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1050) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1051) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1052) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1053) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1054) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1055) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1056) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1057) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (1057) ES7210: config fmt C[0m
+[0;31mE (1058) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1059) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1060) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;31mE (1061) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1061) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1063) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1064) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1064) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1065) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1066) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1067) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1068) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;31mE (1069) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1070) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (1071) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;32mI (1071) AUDIO_HAL: Codec mode is 3, Ctrl:1[0m
+[0;32mI (1078) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (1078) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (1086) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (1087) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (1087) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (1088) audio processor: Create audio player audio stream[0m
+[0;32mI (1089) MP3_DECODER: MP3 init[0m
+[0;32mI (1089) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (1090) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (1091) AUDIO_PIPELINE: link el->rb, el:0x3c1c619c, tag:audio_player_spiffs, rb:0x3c1c69fc[0m
+[0;32mI (1092) AUDIO_PIPELINE: link el->rb, el:0x3c1c6844, tag:audio_player_dec, rb:0x3c1c8a44[0m
+[0;31mE (1093) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1095) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (1096) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (1097) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (1098) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (1099) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c619c] Element task created[0m
+[0;32mI (1100) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (1101) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6844] Element task created[0m
+[0;32mI (1102) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (1103) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c6458] Element task created[0m
+[0;32mI (1104) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6736100 Bytes, Inter:267319 Bytes, Dram:267319 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (1105) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1110) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (1112) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (1112) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (1112) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1113) MP3_DECODER: MP3 opened[0m
+[0;32mI (1113) CODEC_ELEMENT_HELPER: The element is 0x3c1c6844. The reserve data 2 is 0x0.[0m
+[0;32mI (1117) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (1118) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1120) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (1120) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1121) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (1122) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (1123) STORAGE: Verification successful[0m
+[0;32mI (1123) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (1123) STORAGE: did: nfce2e3b[0m
+[0;32mI (1124) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (1125) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (1126) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (1127) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (1127) TOOL: Failed to get MAC address[0m
+[0;32mI (1129) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (1130) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (1131) pp: pp rom version: e7ae62f[0m
+[0;32mI (1132) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1133) wifi:wifi driver task: 3fcc3a98, prio:23, stack:3584, core=0[0m
+[0;32mI (1137) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (1137) wifi:wifi certification version: v7.0[0m
+[0;32mI (1138) wifi:config NVS flash: enabled[0m
+[0;32mI (1138) wifi:config nano formating: disabled[0m
+[0;32mI (1138) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (1139) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1139) wifi:Init management short buffer num: 32[0m
+[0;32mI (1140) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1141) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1141) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1141) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1142) wifi:Init static rx buffer num: 16[0m
+[0;32mI (1142) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (1143) wifi_init: rx ba win: 32[0m
+[0;32mI (1143) wifi_init: accept mbox: 6[0m
+[0;32mI (1144) wifi_init: tcpip mbox: 64[0m
+[0;32mI (1144) wifi_init: udp mbox: 12[0m
+[0;32mI (1145) wifi_init: tcp mbox: 12[0m
+[0;32mI (1145) wifi_init: tcp tx win: 65534[0m
+[0;32mI (1146) wifi_init: tcp rx win: 65534[0m
+[0;32mI (1146) wifi_init: tcp mss: 1440[0m
+[0;32mI (1147) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1147) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1149) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1149) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (1180) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (1181) wifi:enable tsf[0m
+[0;32mI (1182) WiFi: WiFi STA ready[0m
+[0;32mI (1183) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (1185) WiFi: wifi_connect finished.[0m
+[0;32mI (1190) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1190) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1215) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1247) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1269) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1269) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (1270) wifi:pm start, type: 1[0m
+
+[0;32mI (1270) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1271) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1299) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:2, winSize:64[0m
+[0;32mI (1367) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1559) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1928) MP3_DECODER: Closed[0m
+[0;32mI (1967) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1967) audio processor: [ * ] Stop event received[0m
+[0;33mW (1967) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1968) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1969) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1970) audio processor: [ * ] Stop event received[0m
+[0;32mI (2273) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2274) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2274) user_api: User event: WiFi reconnected[0m
+[0;32mI (2274) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2275) user_api: User event: WiFi connected[0m
+[0;32mI (2276) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2277) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2278) WiFi: run wifi_connected_cb[0m
+[0;32mI (2278) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2279) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2280) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2280) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2281) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2282) audio processor: recorder_pipeline_open[0m
+[0;32mI (2283) audio processor: Create audio pipeline for recording[0m
+[0;32mI (2283) audio processor: Create player audio stream[0m
+[0;32mI (2285) audio processor:  Register all player elements to audio pipeline[0m
+[0;32mI (2285) audio processor:  Link all player elements to audio pipeline[0m
+[0;32mI (2286) AUDIO_PIPELINE: link el->rb, el:0x3c1ca980, tag:record_i2s, rb:0x3c1cade8[0m
+[0;32mI (2287) audio processor: player_pipeline_open[0m
+[0;32mI (2287) audio processor: Create audio pipeline for playback[0m
+[0;32mI (2288) audio processor: Create playback audio stream[0m
+[0;32mI (2289) audio_stream_8311: Create opus decoder[0m
+[0;33mW (2290) I2S_STREAM_IDF5.x: I2S(2) already startup[0m
+[0;32mI (2290) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (2291) audio processor: Link playback element together raw-->audio_decoder-->rsp-->i2s_stream-->[codec_chip][0m
+[0;32mI (2293) audio processor: player pipe start running[0m
+[0;32mI (2303) AUDIO_PIPELINE: link el->rb, el:0x3c1ccf44, tag:player_raw, rb:0x3c1cd630[0m
+[0;32mI (2303) AUDIO_PIPELINE: link el->rb, el:0x3c1cd08c, tag:player_dec, rb:0x3c1cf678[0m
+[0;32mI (2304) AUDIO_ELEMENT: [player_raw-0x3c1ccf44] Element task created[0m
+[0;32mI (2305) AUDIO_THREAD: The player_dec task allocate stack on external memory[0m
+[0;32mI (2306) AUDIO_ELEMENT: [player_dec-0x3c1cd08c] Element task created[0m
+[0;32mI (2307) AUDIO_THREAD: The player_rsp task allocate stack on external memory[0m
+[0;32mI (2308) AUDIO_ELEMENT: [player_rsp-0x3c1cd4e8] Element task created[0m
+[0;32mI (2308) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6549824 Bytes, Inter:191947 Bytes, Dram:191947 Bytes, Dram largest free:96256Bytes
+[0m
+[0;32mI (2310) AUDIO_ELEMENT: [player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2311) AUDIO_ELEMENT: [player_rsp] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2312) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2312) RSP_FILTER: sample rate of source data : 16000, channel of source data : 1, sample rate of destination data : 16000, channel of destination data : 2[0m
+[0;32mI (2312) AUDIO_THREAD: The record_i2s task allocate stack on internal memory[0m
+[0;32mI (2315) AUDIO_ELEMENT: [record_i2s-0x3c1ca980] Element task created[0m
+[0;32mI (2316) AUDIO_ELEMENT: [record_raw-0x3c1cac8c] Element task created[0m
+[0;32mI (2317) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6514284 Bytes, Inter:187983 Bytes, Dram:187983 Bytes, Dram largest free:94208Bytes
+[0m
+[0;32mI (2319) AUDIO_ELEMENT: [record_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2320) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2320) audio processor: player pipe start running[0m
+[0;31mE (2321) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2321) MODEL_LOADER: The storage free size is 24576 KB[0m
+[0;32mI (2322) MODEL_LOADER: The partition size is 4096 KB[0m
+[0;32mI (2323) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (2324) RECORDER_SR: The first wakenet model: wn9_nihaoxiaoxin_tts
+[0m
+[0;32mI (2324) AFE_SR: afe interface for speech recognition
+[0m
+[0;32mI (2325) AFE_SR: AFE version: SR_V220727
+[0m
+[0;33mW (2326) SR_SYS: Data cache recommends 64KB[0m
+[0;33mW (2326) SR_SYS: Data cache line recommends 64B[0m
+[0;32mI (2327) AFE_SR: Initial auido front-end, total channel: 2, mic num: 1, ref num: 1
+[0m
+[0;32mI (2328) AFE_SR: aec_init: 1, se_init: 1, vad_init: 1
+[0m
+[0;32mI (2329) AFE_SR: wakenet_init: 1
+[0m
+MC Quantized wakenet9: wakenet9l_tts1h8_你好小鑫_3_0.635_0.639, tigger:v3, mode:0, p:0, (Sep  4 2024 11:49:31)
+[0;32mI (2428) AFE_SR: wake num: 1, mode: 0, (Sep  4 2024 11:49:31)
+[0m
+[0;31mE (2428) RECORDER_ENCODER: recorder_encoder.c:143 (recorder_encoder_create): Got NULL Pointer[0m
+[0;33mW (2429) RECORDER_SR: Multinet is not enabled in SDKCONFIG[0m
+[0;32mI (2429) AUDIO_THREAD: The feed_task task allocate stack on external memory[0m
+[0;32mI (2431) AUDIO_THREAD: The fetch_task task allocate stack on external memory[0m
+[0;32mI (2431) AUDIO_THREAD: The recorder_task task allocate stack on external memory[0m
+[0;32mI (2459) AUDIO_RECORDER: RECORDER_CMD_TRIGGER_START[0m
+[0;31mE (2459) DISPATCHER: exe first list: 0x0[0m
+[0;31mE (2459) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2459) DISPATCHER: dispatcher_event_task is running...[0m
+[0;32mI (2460) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_START[0m
+[0;31mE (2461) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2462) user_api: User event: Standby[0m
+[0;32mI (2459) AUDIO_THREAD: The esp_dispatcher task allocate stack on internal memory[0m
+[0;32mI (2481) AUDIO_THREAD: The voice_read_task task allocate stack on external memory[0m
+[0;32mI (2536) AUDIO_THREAD: The audio_play task allocate stack on external memory[0m
+[0;31mE (2537) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2537) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2538) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (2539) STORAGE: storage_load_bootstrap: 1[0m
+gatProvision url:http://agent.gizwitsapi.com/v2/devices/nfce2e3b/bootstrap
+Server: agent.gizwitsapi.com
+Port: 80
+Path: /v2/devices/nfce2e3b/bootstrap
+[0;32mI (2541) gsever: Generated passcode length: 10[0m
+Generated Request:
+GET /v2/devices/nfce2e3b/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: UIAACNCCXV
+X-Sign-Token: 385f580def18641c28e0a61b117a69219d2b7819bec808696428016b3c07395c
+X-Trace-Id: f3a7902bf7d14032917d1e46f73934b6
+
+
+[0;32mI (2545) https: Initiating HTTP request[0m
+server: agent.gizwitsapi.com
+port: 80
+content: GET /v2/devices/nfce2e3b/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: UIAACNCCXV
+X-Sign-Token: 385f580def18641c28e0a61b117a69219d2b7819bec808696428016b3c07395c
+X-Trace-Id: f3a7902bf7d14032917d1e46f73934b6
+
+
+[0;32mI (2581) https: DNS lookup succeeded. IP=193.112.237.214[0m
+[0;32mI (2582) https: ... allocated socket[0m
+[0;32mI (2608) wifi:<ba-add>idx:1 (ifx:0, a4:1a:3a:ba:5d:f0), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2609) https: ... connected[0m
+[0;32mI (2610) https: ... socket send success[0m
+[0;32mI (2610) https: ... set socket receiving timeout success[0m
+[0;32mI (2642) https: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (2643) https: Starting again![0m
+Response: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-4b72da97da0125cadd031a9a58969789-1845b88b5a6fb70a-00
+X-Sign-Etag: 61eb6ca9744970ecb7a11f07d7b7dfe196c9d6315039a1a1d2c05ecf8a1534a7
+Date: Mon, 31 Mar 2025 04:30:52 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10
+[0;32mI (2647) gsever: Response header: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-4b72da97da0125cadd031a9a58969789-1845b88b5a6fb70a-00
+X-Sign-Etag: 61eb6ca9744970ecb7a11f07d7b7dfe196c9d6315039a1a1d2c05ecf8a1534a7
+Date: Mon, 31 Mar 2025 04:30:52 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+[0;32mI (2652) gsever: Status code: 200[0m
+[0;32mI (2652) gsever: Response body: address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+separator: =114.132.156.204
+separator: =1883
+separator: =360
+separator: =10
+[0;32mI (2655) mqtt_example: mqtt_app_start[0m
+[0;32mI (2655) mqtt_example: MQTT Configuration:[0m
+[0;32mI (2655) mqtt_example:   Address: '114.132.156.204'[0m
+[0;32mI (2656) mqtt_example:   Port: '1883'[0m
+[0;32mI (2656) gsever: Generated passcode length: 10[0m
+Received message on topic: llm/nfce2e3b/config/response
+in_str:{"method":"websocket.auth.response","body":{"platform_type":1,"token_quota":500000,"coze_websocket":{"bot_id":"7483787535647916070","voice_id":"7468518920446640166","user_id":"nfce2e3b","conv_id":"7487821985683341349","access_token":"czs_lSG2WbqZof83bKiBiMjwrIMRNsrbZE2f9VSJ2VSp52I8vLpxC6C1zy0FtqgEZGmQz","expires_in":3540}}}
+[0;32mI (3108) COZE_SOCKET: WebSocket Configuration:[0m
+[0;32mI (3108) COZE_SOCKET: URI: ws://ws.coze.cn/v1/chat?bot_id=7483787535647916070[0m
+[0;32mI (3108) COZE_SOCKET: Transport: TCP[0m
+[0;32mI (3109) COZE_SOCKET: Network timeout: 2000 ms[0m
+[0;32mI (3109) COZE_SOCKET: Registering WebSocket events...[0m
+[0;32mI (3110) COZE_SOCKET: Starting WebSocket client...[0m
+[0;32mI (3112) websocket_client: Started[0m
+[0;32mI (3112) COZE_SOCKET: WebSocket client initialized successfully[0m
+[0;32mI (3420) COZE_SOCKET: WebSocket 连接成功[0m
+[0;32mI (3421) COZE_SOCKET: init_config_message: {"id":"2577230","event_type":"chat.update","data":{"chat_config":{"auto_save_history":true,"conversation_id":"7487821985683341349","user_id":"nfce2e3b","meta_data":{},"custom_variables":{},"extra_params":{}},"need_play_prologue":true,"turn_detection": {"type": "server_vad","prefix_padding_ms": 300,"silence_duration_ms": 300},"input_audio":{"format":"pcm","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"output_audio":{"codec":"opus","opus_config":{"use_cbr":true,"frame_size_ms":60,"limit_config":{"period":1,"max_frame_num":60}},"speech_rate":0,"voice_id":"7468518920446640166"}}}[0m
+[0;32mI (3430) COZE_SOCKET: Sent init config message with event_id: 2577230[0m
+[0;32mI (3430) user_api: User event: Standby[0m
+[0;32mI (3432) COZE_SOCKET: set_recording: true[0m
+[0;32mI (3435) COZE_SOCKET: chat.created[0m
+[0;32mI (3553) COZE_SOCKET: Unknown event: chat.updated[0m
+[0;32mI (3997) COZE_SOCKET: agent_is_pushing: true[0m
+[0;32mI (4006) COZE_SOCKET: es8311: set mic gain to less sensitive[0m
+[0;33mW (4007) audio processor: player pipe is already running state[0m
+[0;32mI (4007) user_api: User event: AI speaking[0m
+[0;32mI (4007) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (4106) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (4570) WiFi: wifi_init finished.[0m
+MAC address: A085E3F44848
+Version: WS010407 
+[0;32mI (4571) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (4572) main_task: Returned from app_main()[0m
+[0;32mI (5030) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (5031) user_api: User event: Standby[0m
+[0;32mI (5031) COZE_SOCKET: Buffer empty, stopping playback[0m
+[0;31mE (5571) sdkService: last_audio_time: 3727434, current_time: 4726475, offset_time: 999041[0m
+[0;31mE (7571) sdkService: last_audio_time: 3727434, current_time: 6726473, offset_time: 2999039[0m
+[0;31mE (9571) sdkService: last_audio_time: 3727434, current_time: 8726476, offset_time: 4999042[0m
+[0;31mE (11571) sdkService: last_audio_time: 3727434, current_time: 10726475, offset_time: 6999041[0m
+[0;31mE (13571) sdkService: last_audio_time: 3727434, current_time: 12726473, offset_time: 8999039[0m
+[0;31mE (15571) sdkService: last_audio_time: 3727434, current_time: 14726481, offset_time: 10999047[0m
+[0;31mE (17571) sdkService: last_audio_time: 3727434, current_time: 16726473, offset_time: 12999039[0m
+[0;31mE (19572) sdkService: last_audio_time: 3727434, current_time: 18727953, offset_time: 15000519[0m
+[0;31mE (21572) sdkService: last_audio_time: 3727434, current_time: 20727474, offset_time: 17000040[0m
+[0;31mE (23572) sdkService: last_audio_time: 3727434, current_time: 22728317, offset_time: 19000883[0m
+[0;31mE (25574) sdkService: last_audio_time: 3727434, current_time: 24729472, offset_time: 21002038[0m
+[0;31mE (27575) sdkService: last_audio_time: 3727434, current_time: 26730479, offset_time: 23003045[0m
+[0;31mE (29575) sdkService: last_audio_time: 3727434, current_time: 28730472, offset_time: 25003038[0m
+[0;31mE (31575) sdkService: last_audio_time: 3727434, current_time: 30730472, offset_time: 27003038[0m
+[0;31mE (33575) sdkService: last_audio_time: 3727434, current_time: 32730476, offset_time: 29003042[0m
+[0;31mE (35575) sdkService: last_audio_time: 3727434, current_time: 34730473, offset_time: 31003039[0m
+[0;31mE (37575) sdkService: last_audio_time: 3727434, current_time: 36730475, offset_time: 33003041[0m
+[0;31mE (39575) sdkService: last_audio_time: 3727434, current_time: 38730473, offset_time: 35003039[0m
+[0;31mE (41575) sdkService: last_audio_time: 3727434, current_time: 40730476, offset_time: 37003042[0m
+[0;31mE (43575) sdkService: last_audio_time: 3727434, current_time: 42730472, offset_time: 39003038[0m
+[0;31mE (45575) sdkService: last_audio_time: 3727434, current_time: 44730476, offset_time: 41003042[0m
+[0;31mE (47575) sdkService: last_audio_time: 3727434, current_time: 46730472, offset_time: 43003038[0m
+[0;31mE (49575) sdkService: last_audio_time: 3727434, current_time: 48730709, offset_time: 45003275[0m
+[0;31mE (51575) sdkService: last_audio_time: 3727434, current_time: 50730483, offset_time: 47003049[0m
+[0;31mE (53575) sdkService: last_audio_time: 3727434, current_time: 52730474, offset_time: 49003040[0m
+[0;31mE (55576) sdkService: last_audio_time: 3727434, current_time: 54731476, offset_time: 51004042[0m
+[0;31mE (57576) sdkService: last_audio_time: 3727434, current_time: 56731474, offset_time: 53004040[0m
+[0;31mE (59576) sdkService: last_audio_time: 3727434, current_time: 58731930, offset_time: 55004496[0m
+[0;31mE (61576) sdkService: last_audio_time: 3727434, current_time: 60731472, offset_time: 57004038[0m

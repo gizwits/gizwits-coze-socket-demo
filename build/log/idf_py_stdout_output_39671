@@ -1,0 +1,50 @@
+[1/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es8388/headphone_detect.c.obj
+[2/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es7148/es7148.c.obj
+[3/36] Building C object esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/xiaozhi_s3/board_pins_config.c.obj
+[4/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es8156/es8156.c.obj
+[5/36] Building C object esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/periph_lcd.c.obj
+[6/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es7243/es7243.c.obj
+[7/36] Building C object esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/xiaozhi_s3/board.c.obj
+[8/36] Building C object esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/lib/tca9554/tca9554.c.obj
+[9/36] Building C object esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/lib/sdcard/sdcard.c.obj
+[10/36] Linking C static library esp-idf/audio_board/libaudio_board.a
+[11/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es8388/es8388.c.obj
+[12/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es7243e/es7243e.c.obj
+[13/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es8311/es8311.c.obj
+[14/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/es7210/es7210.c.obj
+[15/36] Building C object esp-idf/display_service/CMakeFiles/__idf_display_service.dir/display_service.c.obj
+[16/36] cd /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/esp-idf/main && /Users/Kylewang/.espressif/python_env/idf5.3_py3.13_env/bin/python /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/components/spiffs/spiffsgen.py 0x64000 /Users/Kylewang/Documents/myProject/gizwits_socket_demo/spiffs /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/flash_tone.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[17/36] Building C object esp-idf/display_service/CMakeFiles/__idf_display_service.dir/led_bar/led_bar_ws2812.c.obj
+[18/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/zl38063/zl38063.c.obj
+[19/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/tas5805m/tas5805m.c.obj
+[20/36] Building C object esp-idf/input_key_service/CMakeFiles/__idf_input_key_service.dir/input_key_service.c.obj
+[21/36] Building C object esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/driver/zl38063/api_lib/vproc_common.c.obj
+[22/36] Linking C static library esp-idf/esp_peripherals/libesp_peripherals.a
+[23/36] Performing build step for 'bootloader'
+[1/1] cd /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/bootloader/esp-idf/esptool_py && /Users/Kylewang/.espressif/python_env/idf5.3_py3.13_env/bin/python /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x0 /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/bootloader/bootloader.bin
+Bootloader binary size 0x5820 bytes. 0xa7e0 bytes (66%) free.
+[24/36] Building C object esp-idf/dueros_service/CMakeFiles/__idf_dueros_service.dir/dueros_service.c.obj
+[25/36] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+/Users/Kylewang/Documents/myProject/gizwits_socket_demo/main/app_main.c:37:6: warning: conflicting types for 'user_set_volume'; have 'void(int)'
+   37 | void user_set_volume(int vol) {
+      |      ^~~~~~~~~~~~~~~
+/Users/Kylewang/Documents/myProject/gizwits_socket_demo/main/app_main.c:29:5: note: previous implicit declaration of 'user_set_volume' with type 'void(int)'
+   29 |     user_set_volume(volume + vol);
+      |     ^~~~~~~~~~~~~~~
+[26/36] No install step for 'bootloader'
+[27/36] Completed 'bootloader'
+[28/36] Linking C static library esp-idf/audio_hal/libaudio_hal.a
+[29/36] Linking C static library esp-idf/display_service/libdisplay_service.a
+[30/36] Linking C static library esp-idf/input_key_service/libinput_key_service.a
+[31/36] Linking C static library esp-idf/dueros_service/libdueros_service.a
+[32/36] Linking C static library esp-idf/main/libmain.a
+[33/36] Generating ld/sections.ld
+[34/36] Linking CXX executable main_app.elf
+[35/36] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/main_app.bin
+[36/36] cd /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/esp-idf/esptool_py && /Users/Kylewang/.espressif/python_env/idf5.3_py3.13_env/bin/python /Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/partition_table/partition-table.bin /Users/Kylewang/Documents/myProject/gizwits_socket_demo/build/main_app.bin
+main_app.bin binary size 0x1d6090 bytes. Smallest app partition is 0x360000 bytes. 0x189f70 bytes (46%) free.

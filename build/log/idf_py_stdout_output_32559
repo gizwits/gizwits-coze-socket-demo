@@ -1,0 +1,522 @@
+[0;32mI (390) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (391) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (392) octal_psrESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (30) boot: Enabling RNG early entropy source...[0m
+[0;32mI (31) boot: Partition Table:[0m
+[0;32mI (31) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (32) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (33) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (34) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (35) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (36) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (37) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (44) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=78a68h (494184) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=00098a90 vaddr=3fc9cf00 size=07588h ( 30088) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=13afb4h (1290164) map[0m
+[0;32mI (321) esp_image: segment 3: paddr=001dafdc vaddr=3fca4488 size=00da0h (  3488) load[0m
+[0;32mI (322) esp_image: segment 4: paddr=001dbd84 vaddr=40374000 size=18e10h (101904) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (353) boot: Disabling RNG early entropy source...[0m
+[0;32mI (355) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (355) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (356) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (356) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (356) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (357) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (358) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (358) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (359) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (360) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (361) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (362) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (362) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (362) esp_psram: Speed: 80MHz[0m
+[0;32mI (401) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (502) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (502) cpu_start: Multicore app[0m
+[0;32mI (825) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (834) cpu_start: Pro cpu start user code[0m
+[0;32mI (834) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (834) app_init: Application information:[0m
+[0;32mI (834) app_init: Project name:     main_app[0m
+[0;32mI (835) app_init: App version:      2[0m
+[0;32mI (835) app_init: Compile time:     Mar 31 2025 12:32:59[0m
+[0;32mI (836) app_init: ELF file SHA256:  d6038e2a9...[0m
+[0;32mI (837) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (838) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (838) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (839) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (840) heap_init: At 3FCA91B8 len 00040558 (257 KiB): RAM[0m
+[0;32mI (841) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (842) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (843) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (845) spi_flash: detected chip: gd[0m
+[0;32mI (845) spi_flash: flash io: qio[0m
+[0;32mI (845) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (846) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (847) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (848) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (864) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (864) esp_core_dump_flash: Found core dump 37924 bytes in flash @ 0x778000[0m
+[0;32mI (865) coexist: coex firmware version: 4482466[0m
+[0;32mI (865) coexist: coexist rom version e7ae62f[0m
+[0;32mI (866) main_task: Started on CPU0[0m
+[0;32mI (867) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (867) main_task: Calling app_main()[0m
+[0;31mE (875) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;33mW (875) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (875) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (876) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (883) DRV8311: ES8311 in Slave mode[0m
+[0;32mI (893) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) AUDIO_HAL: Codec mode is 3, Ctrl:1[0m
+[0;32mI (903) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (903) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (911) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (911) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (912) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (913) audio processor: Create audio player audio stream[0m
+[0;32mI (914) MP3_DECODER: MP3 init[0m
+[0;32mI (914) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (915) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (916) AUDIO_PIPELINE: link el->rb, el:0x3c1c612c, tag:audio_player_spiffs, rb:0x3c1c698c[0m
+[0;32mI (917) AUDIO_PIPELINE: link el->rb, el:0x3c1c67d4, tag:audio_player_dec, rb:0x3c1c89d4[0m
+[0;31mE (918) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (919) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (920) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (921) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (922) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (923) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c612c] Element task created[0m
+[0;32mI (924) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (925) AUDIO_ELEMENT: [audio_player_dec-0x3c1c67d4] Element task created[0m
+[0;32mI (926) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (927) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c63e8] Element task created[0m
+[0;32mI (928) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6736412 Bytes, Inter:267519 Bytes, Dram:267519 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (930) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (934) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (936) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (936) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (937) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (937) MP3_DECODER: MP3 opened[0m
+[0;32mI (938) CODEC_ELEMENT_HELPER: The element is 0x3c1c67d4. The reserve data 2 is 0x0.[0m
+[0;32mI (941) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (942) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (944) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (945) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (945) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (947) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (947) STORAGE: Verification successful[0m
+[0;32mI (947) STORAGE: auth_key: 4ee835a3cb88451b8d7a49adf336ff8b[0m
+[0;32mI (948) STORAGE: did: nd7ec83a[0m
+[0;32mI (948) STORAGE: crc: 3066[0m
+
+
+-----------auth successful------------
+
+[0;32mI (949) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (950) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (951) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (952) TOOL: Failed to get MAC address[0m
+[0;32mI (952) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (954) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (956) pp: pp rom version: e7ae62f[0m
+[0;32mI (956) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (957) wifi:wifi driver task: 3fcc39d0, prio:23, stack:3584, core=0[0m
+[0;32mI (961) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (961) wifi:wifi certification version: v7.0[0m
+[0;32mI (962) wifi:config NVS flash: enabled[0m
+[0;32mI (962) wifi:config nano formating: disabled[0m
+[0;32mI (962) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (963) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (963) wifi:Init management short buffer num: 32[0m
+[0;32mI (964) wifi:Init static tx buffer num: 16[0m
+[0;32mI (964) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (965) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (965) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (966) wifi:Init static rx buffer num: 16[0m
+[0;32mI (966) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (967) wifi_init: rx ba win: 32[0m
+[0;32mI (967) wifi_init: accept mbox: 6[0m
+[0;32mI (967) wifi_init: tcpip mbox: 64[0m
+[0;32mI (968) wifi_init: udp mbox: 12[0m
+[0;32mI (968) wifi_init: tcp mbox: 12[0m
+[0;32mI (969) wifi_init: tcp tx win: 65534[0m
+[0;32mI (969) wifi_init: tcp rx win: 65534[0m
+[0;32mI (970) wifi_init: tcp mss: 1440[0m
+[0;32mI (970) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (971) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (972) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (974) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (1002) wifi:mode : sta (94:a9:90:19:8a:6c)[0m
+[0;32mI (1002) wifi:enable tsf[0m
+[0;32mI (1003) WiFi: WiFi STA ready[0m
+[0;32mI (1004) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (1006) WiFi: wifi_connect finished.[0m
+[0;32mI (1012) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1013) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1036) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1067) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1091) wifi:connected with Coze_2.4G, aid = 6, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1091) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (1092) wifi:pm start, type: 1[0m
+
+[0;32mI (1092) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1093) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1094) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:2, winSize:64[0m
+[0;32mI (1146) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1383) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1752) MP3_DECODER: Closed[0m
+[0;32mI (1791) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1792) audio processor: [ * ] Stop event received[0m
+[0;33mW (1792) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1793) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1793) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1794) audio processor: [ * ] Stop event received[0m
+[0;32mI (2097) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2098) WiFi: Got IP: 192.168.1.100[0m
+[0;32mI (2098) user_api: User event: WiFi reconnected[0m
+[0;32mI (2098) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2099) user_api: User event: WiFi connected[0m
+[0;32mI (2100) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2101) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2102) WiFi: run wifi_connected_cb[0m
+[0;32mI (2102) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2103) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2104) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2104) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2105) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2106) audio processor: recorder_pipeline_open[0m
+[0;32mI (2107) audio processor: Create audio pipeline for recording[0m
+[0;32mI (2107) audio processor: Create player audio stream[0m
+[0;32mI (2109) audio processor:  Register all player elements to audio pipeline[0m
+[0;32mI (2109) audio processor:  Link all player elements to audio pipeline[0m
+[0;32mI (2110) AUDIO_PIPELINE: link el->rb, el:0x3c1ca910, tag:record_i2s, rb:0x3c1cad78[0m
+[0;32mI (2111) audio processor: player_pipeline_open[0m
+[0;32mI (2111) audio processor: Create audio pipeline for playback[0m
+[0;32mI (2112) audio processor: Create playback audio stream[0m
+[0;32mI (2113) audio_stream_8311: Create opus decoder[0m
+[0;33mW (2114) I2S_STREAM_IDF5.x: I2S(2) already startup[0m
+[0;32mI (2114) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (2115) audio processor: Link playback element together raw-->audio_decoder-->rsp-->i2s_stream-->[codec_chip][0m
+[0;32mI (2116) audio processor: player pipe start running[0m
+[0;32mI (2127) AUDIO_PIPELINE: link el->rb, el:0x3c1cced4, tag:player_raw, rb:0x3c1cd5c0[0m
+[0;32mI (2127) AUDIO_PIPELINE: link el->rb, el:0x3c1cd01c, tag:player_dec, rb:0x3c1cf608[0m
+[0;32mI (2128) AUDIO_ELEMENT: [player_raw-0x3c1cced4] Element task created[0m
+[0;32mI (2128) AUDIO_THREAD: The player_dec task allocate stack on external memory[0m
+[0;32mI (2130) AUDIO_ELEMENT: [player_dec-0x3c1cd01c] Element task created[0m
+[0;32mI (2131) AUDIO_THREAD: The player_rsp task allocate stack on external memory[0m
+[0;32mI (2131) AUDIO_ELEMENT: [player_rsp-0x3c1cd478] Element task created[0m
+[0;32mI (2132) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6550136 Bytes, Inter:192147 Bytes, Dram:192147 Bytes, Dram largest free:96256Bytes
+[0m
+[0;32mI (2134) AUDIO_ELEMENT: [player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2135) AUDIO_ELEMENT: [player_rsp] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2136) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2136) RSP_FILTER: sample rate of source data : 16000, channel of source data : 1, sample rate of destination data : 16000, channel of destination data : 2[0m
+[0;32mI (2136) AUDIO_THREAD: The record_i2s task allocate stack on internal memory[0m
+[0;32mI (2139) AUDIO_ELEMENT: [record_i2s-0x3c1ca910] Element task created[0m
+[0;32mI (2140) AUDIO_ELEMENT: [record_raw-0x3c1cac1c] Element task created[0m
+[0;32mI (2141) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6514596 Bytes, Inter:188183 Bytes, Dram:188183 Bytes, Dram largest free:94208Bytes
+[0m
+[0;32mI (2142) AUDIO_ELEMENT: [record_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2143) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2144) audio processor: player pipe start running[0m
+[0;31mE (2145) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2145) MODEL_LOADER: The storage free size is 24576 KB[0m
+[0;32mI (2146) MODEL_LOADER: The partition size is 4096 KB[0m
+[0;32mI (2147) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (2147) RECORDER_SR: The first wakenet model: wn9_nihaoxiaoxin_tts
+[0m
+[0;32mI (2148) AFE_SR: afe interface for speech recognition
+[0m
+[0;32mI (2149) AFE_SR: AFE version: SR_V220727
+[0m
+[0;33mW (2150) SR_SYS: Data cache recommends 64KB[0m
+[0;33mW (2150) SR_SYS: Data cache line recommends 64B[0m
+[0;32mI (2151) AFE_SR: Initial auido front-end, total channel: 2, mic num: 1, ref num: 1
+[0m
+[0;32mI (2152) AFE_SR: aec_init: 1, se_init: 1, vad_init: 1
+[0m
+[0;32mI (2153) AFE_SR: wakenet_init: 1
+[0m
+MC Quantized wakenet9: wakenet9l_tts1h8_你好小鑫_3_0.635_0.639, tigger:v3, mode:0, p:0, (Sep  4 2024 11:49:31)
+[0;32mI (2252) AFE_SR: wake num: 1, mode: 0, (Sep  4 2024 11:49:31)
+[0m
+[0;31mE (2252) RECORDER_ENCODER: recorder_encoder.c:143 (recorder_encoder_create): Got NULL Pointer[0m
+[0;33mW (2253) RECORDER_SR: Multinet is not enabled in SDKCONFIG[0m
+[0;32mI (2253) AUDIO_THREAD: The feed_task task allocate stack on external memory[0m
+[0;32mI (2255) AUDIO_THREAD: The fetch_task task allocate stack on external memory[0m
+[0;32mI (2255) AUDIO_THREAD: The recorder_task task allocate stack on external memory[0m
+[0;32mI (2340) AUDIO_RECORDER: RECORDER_CMD_TRIGGER_START[0m
+[0;31mE (2340) DISPATCHER: exe first list: 0x0[0m
+[0;31mE (2341) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2341) DISPATCHER: dispatcher_event_task is running...[0m
+[0;32mI (2341) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_START[0m
+[0;31mE (2343) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2343) user_api: User event: Standby[0m
+[0;32mI (2341) AUDIO_THREAD: The esp_dispatcher task allocate stack on internal memory[0m
+[0;32mI (2376) AUDIO_THREAD: The voice_read_task task allocate stack on external memory[0m
+[0;32mI (2426) AUDIO_THREAD: The audio_play task allocate stack on external memory[0m
+[0;31mE (2426) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2426) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2427) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (2428) STORAGE: storage_load_bootstrap: 1[0m
+gatProvision url:http://agent.gizwitsapi.com/v2/devices/nd7ec83a/bootstrap
+Server: agent.gizwitsapi.com
+Port: 80
+Path: /v2/devices/nd7ec83a/bootstrap
+[0;32mI (2431) gsever: Generated passcode length: 10[0m
+Generated Request:
+GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: QIFBZOWWTM
+X-Sign-Token: eeead669311a715183c1657d18f5c8951e2b5dbb50590fb0a9bdcf06265f91af
+X-Trace-Id: 222a099d96b848d0ac307e8ce51228a0
+
+
+[0;32mI (2434) https: Initiating HTTP request[0m
+server: agent.gizwitsapi.com
+port: 80
+content: GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: QIFBZOWWTM
+X-Sign-Token: eeead669311a715183c1657d18f5c8951e2b5dbb50590fb0a9bdcf06265f91af
+X-Trace-Id: 222a099d96b848d0ac307e8ce51228a0
+
+
+[0;32mI (2471) https: DNS lookup succeeded. IP=193.112.237.214[0m
+[0;32mI (2472) https: ... allocated socket[0m
+[0;32mI (2474) wifi:<ba-add>idx:1 (ifx:0, a4:1a:3a:ba:5d:f0), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2490) https: ... connected[0m
+[0;32mI (2491) https: ... socket send success[0m
+[0;32mI (2491) https: ... set socket receiving timeout success[0m
+[0;32mI (2509) https: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (2510) https: Starting again![0m
+Response: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-44b1c1daba9ae16f3061a2bac33b061f-ea0d16b39bfad6e5-00
+X-Sign-Etag: cd1bd9f59e571660a508aeea832f3ba055b9a45176d374547b31ef1bbabc4182
+Date: Mon, 31 Mar 2025 04:34:25 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10
+[0;32mI (2513) gsever: Response header: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-44b1c1daba9ae16f3061a2bac33b061f-ea0d16b39bfad6e5-00
+X-Sign-Etag: cd1bd9f59e571660a508aeea832f3ba055b9a45176d374547b31ef1bbabc4182
+Date: Mon, 31 Mar 2025 04:34:25 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+[0;32mI (2518) gsever: Status code: 200[0m
+[0;32mI (2518) gsever: Response body: address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+separator: =114.132.156.204
+separator: =1883
+separator: =360
+separator: =10
+[0;32mI (2521) mqtt_example: mqtt_app_start[0m
+[0;32mI (2521) mqtt_example: MQTT Configuration:[0m
+[0;32mI (2521) mqtt_example:   Address: '114.132.156.204'[0m
+[0;32mI (2523) mqtt_example:   Port: '1883'[0m
+[0;32mI (2525) gsever: Generated passcode length: 10[0m
+Received message on topic: llm/nd7ec83a/config/response
+in_str:{"method":"websocket.auth.response","body":{"platform_type":1,"token_quota":500000,"coze_websocket":{"bot_id":"7483500323458465833","voice_id":"7426720361753968677","user_id":"nd7ec83a","conv_id":"7486755284011204647","access_token":"czs_q4PMBYjcP9ez9GiNP2H70Tiev2xUPPgO5UQM923dAK5omlEO41AcMQzlod6bKksDh","expires_in":3540}}}
+[0;32mI (3014) COZE_SOCKET: WebSocket Configuration:[0m
+[0;32mI (3014) COZE_SOCKET: URI: ws://ws.coze.cn/v1/chat?bot_id=7483500323458465833[0m
+[0;32mI (3015) COZE_SOCKET: Transport: TCP[0m
+[0;32mI (3015) COZE_SOCKET: Network timeout: 2000 ms[0m
+[0;32mI (3016) COZE_SOCKET: Registering WebSocket events...[0m
+[0;32mI (3017) COZE_SOCKET: Starting WebSocket client...[0m
+[0;32mI (3017) websocket_client: Started[0m
+[0;32mI (3018) COZE_SOCKET: WebSocket client initialized successfully[0m
+[0;32mI (3301) COZE_SOCKET: WebSocket 连接成功[0m
+[0;32mI (3302) COZE_SOCKET: init_config_message: {"id":"2458985","event_type":"chat.update","data":{"chat_config":{"auto_save_history":true,"conversation_id":"7486755284011204647","user_id":"nd7ec83a","meta_data":{},"custom_variables":{},"extra_params":{}},"need_play_prologue":true,"turn_detection": {"type": "server_vad","prefix_padding_ms": 300,"silence_duration_ms": 300},"input_audio":{"format":"pcm","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"output_audio":{"codec":"opus","opus_config":{"use_cbr":true,"frame_size_ms":60,"limit_config":{"period":1,"max_frame_num":60}},"speech_rate":0,"voice_id":"7426720361753968677"}}}[0m
+[0;32mI (3311) COZE_SOCKET: Sent init config message with event_id: 2458985[0m
+[0;32mI (3312) user_api: User event: Standby[0m
+[0;32mI (3313) COZE_SOCKET: set_recording: true[0m
+[0;32mI (3316) COZE_SOCKET: chat.created[0m
+[0;32mI (3462) COZE_SOCKET: Unknown event: chat.updated[0m
+[0;32mI (3949) COZE_SOCKET: agent_is_pushing: true[0m
+[0;32mI (3973) COZE_SOCKET: es8311: set mic gain to less sensitive[0m
+[0;33mW (3974) audio processor: player pipe is already running state[0m
+[0;32mI (3974) user_api: User event: AI speaking[0m
+[0;32mI (3974) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (4466) WiFi: wifi_init finished.[0m
+MAC address: 94A990198A6C
+Version: WS010407 
+[0;32mI (4467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (4467) main_task: Returned from app_main()[0m
+[0;32mI (4988) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (5467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (6467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (7467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (8467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (8857) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (8858) user_api: User event: Standby[0m
+[0;32mI (8858) COZE_SOCKET: Buffer empty, stopping playback[0m
+[0;31mE (9467) sdkService: last_audio_time: 7623811, current_time: 8623505, offset_time: 999694[0m
+[0;31mE (11467) sdkService: last_audio_time: 7623811, current_time: 10623506, offset_time: 2999695[0m
+[0;31mE (13467) sdkService: last_audio_time: 7623811, current_time: 12623553, offset_time: 4999742[0m
+[0;31mE (15469) sdkService: last_audio_time: 7623811, current_time: 14625677, offset_time: 7001866[0m
+[0;31mE (17471) sdkService: last_audio_time: 7623811, current_time: 16627508, offset_time: 9003697[0m
+[0;31mE (19472) sdkService: last_audio_time: 7623811, current_time: 18628653, offset_time: 11004842[0m
+[0;31mE (21472) sdkService: last_audio_time: 7623811, current_time: 20628546, offset_time: 13004735[0m
+[0;31mE (23473) sdkService: last_audio_time: 7623811, current_time: 22629524, offset_time: 15005713[0m
+[0;31mE (25473) sdkService: last_audio_time: 7623811, current_time: 24629598, offset_time: 17005787[0m
+[0;31mE (27473) sdkService: last_audio_time: 7623811, current_time: 26630211, offset_time: 19006400[0m
+[0;31mE (29476) sdkService: last_audio_time: 7623811, current_time: 28632508, offset_time: 21008697[0m
+[0;31mE (31476) sdkService: last_audio_time: 7623811, current_time: 30632505, offset_time: 23008694[0m
+[0;31mE (33476) sdkService: last_audio_time: 7623811, current_time: 32633063, offset_time: 25009252[0m
+[0;31mE (35476) sdkService: last_audio_time: 7623811, current_time: 34632516, offset_time: 27008705[0m
+[0;31mE (37476) sdkService: last_audio_time: 7623811, current_time: 36632504, offset_time: 29008693[0m
+[0;31mE (39476) sdkService: last_audio_time: 7623811, current_time: 38632509, offset_time: 31008698[0m
+[0;31mE (41476) sdkService: last_audio_time: 7623811, current_time: 40632509, offset_time: 33008698[0m
+[0;31mE (43476) sdkService: last_audio_time: 7623811, current_time: 42632511, offset_time: 35008700[0m
+[0;31mE (45476) sdkService: last_audio_time: 7623811, current_time: 44632508, offset_time: 37008697[0m
+[0;31mE (47476) sdkService: last_audio_time: 7623811, current_time: 46632506, offset_time: 39008695[0m
+[0;31mE (49476) sdkService: last_audio_time: 7623811, current_time: 48632508, offset_time: 41008697[0m
+[0;31mE (51476) sdkService: last_audio_time: 7623811, current_time: 50632658, offset_time: 43008847[0m
+[0;31mE (53476) sdkService: last_audio_time: 7623811, current_time: 52632510, offset_time: 45008699[0m
+[0;31mE (55476) sdkService: last_audio_time: 7623811, current_time: 54632923, offset_time: 47009112[0m
+[0;31mE (57476) sdkService: last_audio_time: 7623811, current_time: 56632516, offset_time: 49008705[0m
+[0;31mE (59476) sdkService: last_audio_time: 7623811, current_time: 58632518, offset_time: 51008707[0m
+[0;31mE (61476) sdkService: last_audio_time: 7623811, current_time: 60632507, offset_time: 53008696[0m
+[0;31mE (63476) sdkService: last_audio_time: 7623811, current_time: 62632507, offset_time: 55008696[0m
+[0;31mE (65478) sdkService: last_audio_time: 7623811, current_time: 64634514, offset_time: 57010703[0m
+[0;31mE (67478) sdkService: last_audio_time: 7623811, current_time: 66634513, offset_time: 59010702[0m
+[0;31mE (69478) sdkService: last_audio_time: 7623811, current_time: 68634507, offset_time: 61010696[0m
+[0;31mE (71478) sdkService: last_audio_time: 7623811, current_time: 70634516, offset_time: 63010705[0m
+[0;31mE (73478) sdkService: last_audio_time: 7623811, current_time: 72634504, offset_time: 65010693[0m
+[0;31mE (75478) sdkService: last_audio_time: 7623811, current_time: 74634506, offset_time: 67010695[0m
+[0;31mE (77478) sdkService: last_audio_time: 7623811, current_time: 76634509, offset_time: 69010698[0m
+[0;31mE (79478) sdkService: last_audio_time: 7623811, current_time: 78634506, offset_time: 71010695[0m
+[0;31mE (81478) sdkService: last_audio_time: 7623811, current_time: 80634506, offset_time: 73010695[0m
+[0;31mE (83478) sdkService: last_audio_time: 7623811, current_time: 82634507, offset_time: 75010696[0m
+[0;31mE (85478) sdkService: last_audio_time: 7623811, current_time: 84634513, offset_time: 77010702[0m
+[0;31mE (87478) sdkService: last_audio_time: 7623811, current_time: 86634510, offset_time: 79010699[0m
+[0;31mE (89478) sdkService: last_audio_time: 7623811, current_time: 88634506, offset_time: 81010695[0m
+[0;31mE (91478) sdkService: last_audio_time: 7623811, current_time: 90634508, offset_time: 83010697[0m
+[0;31mE (93478) sdkService: last_audio_time: 7623811, current_time: 92634512, offset_time: 85010701[0m
+[0;31mE (95478) sdkService: last_audio_time: 7623811, current_time: 94634509, offset_time: 87010698[0m
+[0;31mE (97480) sdkService: last_audio_time: 7623811, current_time: 96636518, offset_time: 89012707[0m
+[0;31mE (99480) sdkService: last_audio_time: 7623811, current_time: 98636510, offset_time: 91012699[0m
+[0;31mE (101481) sdkService: last_audio_time: 7623811, current_time: 100637770, offset_time: 93013959[0m
+[0;31mE (103483) sdkService: last_audio_time: 7623811, current_time: 102639505, offset_time: 95015694[0m
+[0;31mE (105483) sdkService: last_audio_time: 7623811, current_time: 104639508, offset_time: 97015697[0m
+[0;31mE (107483) sdkService: last_audio_time: 7623811, current_time: 106639505, offset_time: 99015694[0m
+[0;31mE (109483) sdkService: last_audio_time: 7623811, current_time: 108639505, offset_time: 101015694[0m
+[0;31mE (111483) sdkService: last_audio_time: 7623811, current_time: 110639507, offset_time: 103015696[0m
+[0;31mE (113483) sdkService: last_audio_time: 7623811, current_time: 112639505, offset_time: 105015694[0m
+[0;31mE (115483) sdkService: last_audio_time: 7623811, current_time: 114639506, offset_time: 107015695[0m
+[0;31mE (117483) sdkService: last_audio_time: 7623811, current_time: 116639506, offset_time: 109015695[0m
+[0;31mE (119483) sdkService: last_audio_time: 7623811, current_time: 118639506, offset_time: 111015695[0m
+[0;31mE (121483) sdkService: last_audio_time: 7623811, current_time: 120639504, offset_time: 113015693[0m
+[0;31mE (123484) sdkService: last_audio_time: 7623811, current_time: 122640514, offset_time: 115016703[0m
+[0;31mE (125484) sdkService: last_audio_time: 7623811, current_time: 124640600, offset_time: 117016789[0m
+[0;31mE (127484) sdkService: last_audio_time: 7623811, current_time: 126640507, offset_time: 119016696[0m
+[0;31mE (129486) sdkService: last_audio_time: 7623811, current_time: 128642518, offset_time: 121018707[0m
+[0;32mI (129486) sdkService: Audio timeout detected[0m
+[0;32mI (129489) user_api: User event: Sleep[0m
+[0;32mI (129489) audio processor: player pipe stop running[0m
+[0;32mI (129489) audio processor: audio_tone_play: spiffs://spiffs/converted_sleep.mp3[0m
+[0;32mI (129491) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (129498) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c612c] Element task created[0m
+[0;32mI (129499) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (129499) AUDIO_ELEMENT: [audio_player_dec-0x3c1c67d4] Element task created[0m
+[0;32mI (129500) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (129501) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c63e8] Element task created[0m
+[0;32mI (129502) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:3557168 Bytes, Inter:115663 Bytes, Dram:115663 Bytes, Dram largest free:31744Bytes
+[0m
+[0;32mI (129504) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (129506) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (129506) MP3_DECODER: MP3 opened[0m
+[0;32mI (129506) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (129507) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (129512) SPIFFS_STREAM: File size is 7568 byte, pos:0[0m
+[0;32mI (129513) CODEC_ELEMENT_HELPER: The element is 0x3c1c67d4. The reserve data 2 is 0x0.[0m
+[0;32mI (129516) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=2[0m
+[0;33mW (129559) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (129559) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (130327) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (130692) MP3_DECODER: Closed[0m
+[0;32mI (130711) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (130711) audio processor: [ * ] Stop event received[0m
+[0;33mW (130712) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (130712) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (130713) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (130741) audio processor: [ * ] Stop event received[0m
+[0;32mI (131508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (133508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (135508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (137508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (139508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (141508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (143509) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (145511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (147511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (149511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (151511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (153511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (155511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (157511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (159511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (161511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (163512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (165512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (167512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (169512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (171512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (173512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (175512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (177513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (179513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (181513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (183513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (185514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (187514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (189514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (191514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (193514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (195514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (197514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (199514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (201514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (203514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (205515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (207515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (209515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (211515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (213515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (215515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (217517) sdkService: Sleep flag is set, exiting task[0m

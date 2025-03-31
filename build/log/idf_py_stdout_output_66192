@@ -1,0 +1,1591 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (30) boot: Enabling RNG early entropy source...[0m
+[0;32mI (31) boot: Partition Table:[0m
+[0;32mI (31) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (32) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (33) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (34) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (35) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (36) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (37) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (44) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (353) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (353) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (355) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (356) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (357) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (358) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (359) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (360) esp_psram: Speed: 80MHz[0m
+[0;32mI (398) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (499) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (833) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (834) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (835) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (836) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (837) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (839) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (840) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (841) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (842) spi_flash: detected chip: gd[0m
+[0;32mI (842) spi_flash: flash io: qio[0m
+[0;32mI (843) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (855) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (866) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (910) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (966) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;32mI (967) WiFi: WiFi STA ready[0m
+[0;32mI (968) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (970) WiFi: wifi_connect finished.[0m
+[0;32mI (975) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (975) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (985) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1000) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1021) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1021) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (1022) wifi:pm start, type: 1[0m
+
+[0;32mI (1023) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1023) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1025) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1107) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2025) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2025) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2026) user_api: User event: WiFi reconnected[0m
+[0;32mI (2026) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2027) user_api: User event: WiFi connected[0m
+[0;32mI (2028) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2029) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2030) WiFi: run wifi_connected_cb[0m
+[0;32mI (2030) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2031) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2032) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2032) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2033) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2034) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060c30  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2045) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2045) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2047) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2329) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2330) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2330) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2331) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (909) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (986) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (987) wifi:enable tsf[0m
+[0;32mI (988) WiFi: WiFi STA ready[0m
+[0;32mI (990) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (992) WiFi: wifi_connect finished.[0m
+[0;32mI (997) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (997) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1015) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1045) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1066) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1067) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1067) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (1068) wifi:pm start, type: 1[0m
+
+[0;32mI (1068) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1069) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1129) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2071) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2072) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2072) user_api: User event: WiFi reconnected[0m
+[0;32mI (2072) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2073) user_api: User event: WiFi connected[0m
+[0;32mI (2074) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2075) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2076) WiFi: run wifi_connected_cb[0m
+[0;32mI (2076) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2077) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2078) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2078) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2079) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2080) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060e30  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2090) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2091) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2092) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2373) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2374) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2374) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2375) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (909) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (973) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (973) wifi:enable tsf[0m
+[0;32mI (974) WiFi: WiFi STA ready[0m
+[0;32mI (977) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (978) WiFi: wifi_connect finished.[0m
+[0;32mI (987) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (988) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1008) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1038) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1058) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (1064) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1065) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (1065) wifi:pm start, type: 1[0m
+
+[0;32mI (1066) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1066) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1107) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2068) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2069) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2069) user_api: User event: WiFi reconnected[0m
+[0;32mI (2069) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2070) user_api: User event: WiFi connected[0m
+[0;32mI (2071) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2072) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2073) WiFi: run wifi_connected_cb[0m
+[0;32mI (2073) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2074) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2075) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2075) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2076) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2077) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060e30  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2087) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2088) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2089) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2372) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2372) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2373) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2374) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (910) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (966) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;32mI (967) WiFi: WiFi STA ready[0m
+[0;32mI (968) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (970) WiFi: wifi_connect finished.[0m
+[0;32mI (975) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (975) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (994) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1024) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1044) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1048) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1048) wifi:security: WPA2-PSK, phy: bgn, rssi: -30[0m
+[0;32mI (1049) wifi:pm start, type: 1[0m
+
+[0;32mI (1049) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1050) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1084) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2052) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2053) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2053) user_api: User event: WiFi reconnected[0m
+[0;32mI (2053) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2054) user_api: User event: WiFi connected[0m
+[0;32mI (2055) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2056) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2057) WiFi: run wifi_connected_cb[0m
+[0;32mI (2057) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2058) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2059) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2059) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2060) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2061) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060e30  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2071) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2072) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2073) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2355) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2355) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2356) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2357) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (909) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (969) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (969) wifi:enable tsf[0m
+[0;32mI (970) WiFi: WiFi STA ready[0m
+[0;32mI (971) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (973) WiFi: wifi_connect finished.[0m
+[0;32mI (978) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (979) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1003) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1034) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1052) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1053) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1053) wifi:security: WPA2-PSK, phy: bgn, rssi: -28[0m
+[0;32mI (1054) wifi:pm start, type: 1[0m
+
+[0;32mI (1054) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1055) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1080) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2057) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2058) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2058) user_api: User event: WiFi reconnected[0m
+[0;32mI (2058) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2059) user_api: User event: WiFi connected[0m
+[0;32mI (2060) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2061) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2062) WiFi: run wifi_connected_cb[0m
+[0;32mI (2062) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2063) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2064) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2064) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2065) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2066) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060e30  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2076) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2077) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2078) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2365) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2365) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2365) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2366) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (910) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (970) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (970) wifi:enable tsf[0m
+[0;32mI (971) WiFi: WiFi STA ready[0m
+[0;32mI (973) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (976) WiFi: wifi_connect finished.[0m
+[0;32mI (979) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (980) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1001) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1032) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1050) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1056) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1056) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (1057) wifi:pm start, type: 1[0m
+
+[0;32mI (1057) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1058) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1066) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1715) MP3_DECODER: Closed[0m
+[0;32mI (1754) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1754) audio processor: [ * ] Stop event received[0m
+[0;33mW (1754) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1755) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1756) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1757) audio processor: [ * ] Stop event received[0m
+[0;32mI (2060) esp_netif_handlers: sta ip: 192.168.1.106, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2061) WiFi: Got IP: 192.168.1.106[0m
+[0;32mI (2061) user_api: User event: WiFi reconnected[0m
+[0;32mI (2061) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2062) user_api: User event: WiFi connected[0m
+[0;32mI (2063) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2064) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2065) WiFi: run wifi_connected_cb[0m
+[0;32mI (2065) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2066) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2067) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2067) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2068) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2069) audio processor: recorder_pipeline_open[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204805b  PS      : 0x00060630  A0      : 0x82048132  A1      : 0x3fcacbf0  
+A2      : 0x00000000  A3      : 0x00000030  A4      : 0x00000000  A5      : 0x3c14fbae  
+A6      : 0x00000005  A7      : 0x00000003  A8      : 0x80376968  A9      : 0x3fcacc20  
+A10     : 0x3c1ca1a4  A11     : 0x00000000  A12     : 0x3fca505c  A13     : 0xc0378000  
+A14     : 0x00067fff  A15     : 0x3fca950c  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42048058:0x3fcacbf0 0x4204812f:0x3fcacc40 0x4201abe1:0x3fcacc80 0x4201a0fd:0x3fcaccb0 0x42016884:0x3fcacce0 0x420104a0:0x3fcacd20 0x420118c2:0x3fcacd50 0x420119a9:0x3fcace50 0x42010700:0x3fcacee0 0x4200fe61:0x3fcacf30 0x421342ee:0x3fcacf50 0x40382a1a:0x3fcacf80
+
+
+
+
+ELF file SHA256: 995fcbbd0
+
+[0;32mI (2079) esp_core_dump_flash: Save core dump to flash...[0m
+[0;32mI (2080) esp_core_dump_common: Backing up stack @ 0x3fcaca70 and use core dump stack @ 0x3fca5ec0[0m
+[0;32mI (2081) esp_core_dump_flash: Erase flash 24576 bytes @ 0x778000[0m
+[0;32mI (2361) esp_core_dump_flash: Write end offset 0x56e4, check sum length 4[0m
+[0;32mI (2361) esp_core_dump_common: Core dump used 1200 bytes on stack. 676 bytes left free.[0m
+[0;32mI (2362) esp_core_dump_common: Restoring stack @ 0x3fcaca70[0m
+[0;32mI (2363) esp_core_dump_flash: Core dump has been saved to flash.[0m
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (30) boot: Partition Table:[0m
+[0;32mI (30) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (31) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (32) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (33) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (34) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (35) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (36) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (43) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=773b0h (488368) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000973d8 vaddr=3fc9cb00 size=08308h ( 33544) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0009f6e8 vaddr=40374000 size=00930h (  2352) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=138434h (1279028) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=001d845c vaddr=40374930 size=18104h ( 98564) load[0m
+[0;32mI (350) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (352) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (352) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (352) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (353) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (354) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (354) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (356) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (357) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (358) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (359) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (359) esp_psram: Speed: 80MHz[0m
+[0;32mI (397) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (498) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (499) cpu_start: Multicore app[0m
+[0;32mI (822) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (831) cpu_start: Pro cpu start user code[0m
+[0;32mI (831) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (831) app_init: Application information:[0m
+[0;32mI (831) app_init: Project name:     main_app[0m
+[0;32mI (832) app_init: App version:      2[0m
+[0;32mI (832) app_init: Compile time:     Mar 31 2025 13:01:25[0m
+[0;32mI (833) app_init: ELF file SHA256:  995fcbbd0...[0m
+[0;32mI (833) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (834) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (835) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (835) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (836) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (837) heap_init: At 3FCA8D78 len 00040998 (258 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (839) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (840) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (841) spi_flash: detected chip: gd[0m
+[0;32mI (841) spi_flash: flash io: qio[0m
+[0;32mI (842) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (843) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (844) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (845) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (854) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (855) esp_core_dump_flash: Found core dump 22244 bytes in flash @ 0x778000[0m
+[0;32mI (855) coexist: coex firmware version: 4482466[0m
+[0;32mI (856) coexist: coexist rom version e7ae62f[0m
+[0;32mI (857) main_task: Started on CPU0[0m
+[0;32mI (858) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (858) main_task: Calling app_main()[0m
+[0;31mE (865) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;32mI (865) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (866) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (874) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (874) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (874) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (875) audio processor: Create audio player audio stream[0m
+[0;32mI (876) MP3_DECODER: MP3 init[0m
+[0;32mI (877) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (877) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (879) AUDIO_PIPELINE: link el->rb, el:0x3c1c5ba8, tag:audio_player_spiffs, rb:0x3c1c6408[0m
+[0;32mI (880) AUDIO_PIPELINE: link el->rb, el:0x3c1c6250, tag:audio_player_dec, rb:0x3c1c8450[0m
+[0;31mE (881) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (882) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (883) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (884) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (885) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (886) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c5ba8] Element task created[0m
+[0;32mI (887) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (888) AUDIO_ELEMENT: [audio_player_dec-0x3c1c6250] Element task created[0m
+[0;32mI (889) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (890) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c5e64] Element task created[0m
+[0;32mI (891) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6739348 Bytes, Inter:269043 Bytes, Dram:269043 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (892) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (897) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (899) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (899) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (899) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (900) MP3_DECODER: MP3 opened[0m
+[0;32mI (900) CODEC_ELEMENT_HELPER: The element is 0x3c1c6250. The reserve data 2 is 0x0.[0m
+[0;32mI (904) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (905) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (907) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (907) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (908) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (909) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (910) STORAGE: Verification successful[0m
+[0;32mI (910) STORAGE: auth_key: 0afc130392b34401895c64692dc2aa3a[0m
+[0;32mI (910) STORAGE: did: nfce2e3b[0m
+[0;32mI (911) STORAGE: crc: 2881[0m
+
+
+-----------auth successful------------
+
+[0;32mI (912) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (913) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (914) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (914) TOOL: Failed to get MAC address[0m
+[0;32mI (915) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (917) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (918) pp: pp rom version: e7ae62f[0m
+[0;32mI (919) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (920) wifi:wifi driver task: 3fcc33dc, prio:23, stack:3584, core=0[0m
+[0;32mI (924) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (924) wifi:wifi certification version: v7.0[0m
+[0;32mI (924) wifi:config NVS flash: enabled[0m
+[0;32mI (925) wifi:config nano formating: disabled[0m
+[0;32mI (925) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (926) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (926) wifi:Init management short buffer num: 32[0m
+[0;32mI (927) wifi:Init static tx buffer num: 16[0m
+[0;32mI (927) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (928) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (928) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (929) wifi:Init static rx buffer num: 16[0m
+[0;32mI (929) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (930) wifi_init: rx ba win: 32[0m
+[0;32mI (930) wifi_init: accept mbox: 6[0m
+[0;32mI (930) wifi_init: tcpip mbox: 64[0m
+[0;32mI (931) wifi_init: udp mbox: 12[0m
+[0;32mI (931) wifi_init: tcp mbox: 12[0m
+[0;32mI (932) wifi_init: tcp tx win: 65534[0m
+[0;32mI (932) wifi_init: tcp rx win: 65534[0m
+[0;32mI (933) wifi_init: tcp mss: 1440[0m
+[0;32mI (933) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (934) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (935) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (937) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (976) wifi:mode : sta (a0:85:e3:f4:48:48)[0m
+[0;32mI (976) wifi:enable tsf[0m
+[0;32mI (977) WiFi: WiFi STA ready[0m
+[0;32mI (979) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (981) WiFi: wifi_connect finished.[0m
+[0;32mI (987) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (988) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1001) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1034) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1050) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (1066) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1066) wifi:security: WPA2-PSK, phy: bgn, rssi: -33[0m
+[0;32mI (1067) wifi:pm start, type: 1[0m
+
+[0;32mI (1067) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1068) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1158) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1346) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m

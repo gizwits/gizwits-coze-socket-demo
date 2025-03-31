@@ -1,0 +1,1621 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 31 2025 12:23:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (28) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (30) boot: Enabling RNG early entropy source...[0m
+[0;32mI (31) boot: Partition Table:[0m
+[0;32mI (31) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (32) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (33) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (34) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (35) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (36) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (37) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (38) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (44) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=789e8h (494056) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=00098a10 vaddr=3fc9cf00 size=07608h ( 30216) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=13af60h (1290080) map[0m
+[0;32mI (321) esp_image: segment 3: paddr=001daf88 vaddr=3fca4508 size=00d20h (  3360) load[0m
+[0;32mI (322) esp_image: segment 4: paddr=001dbcb0 vaddr=40374000 size=18e10h (101904) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (353) boot: Disabling RNG early entropy source...[0m
+[0;32mI (355) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (355) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (356) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (356) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (356) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (357) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (358) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (358) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (359) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (360) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (361) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (362) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (362) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (362) esp_psram: Speed: 80MHz[0m
+[0;32mI (401) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (502) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (502) cpu_start: Multicore app[0m
+[0;32mI (825) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (834) cpu_start: Pro cpu start user code[0m
+[0;32mI (834) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (834) app_init: Application information:[0m
+[0;32mI (834) app_init: Project name:     main_app[0m
+[0;32mI (835) app_init: App version:      2[0m
+[0;32mI (836) app_init: Compile time:     Mar 31 2025 14:37:32[0m
+[0;32mI (836) app_init: ELF file SHA256:  bddec2e12...[0m
+[0;32mI (837) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (838) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (838) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (839) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (840) heap_init: At 3FCA91B8 len 00040558 (257 KiB): RAM[0m
+[0;32mI (841) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (842) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (844) esp_psram: Adding pool of 6380K of PSRAM memory to heap allocator[0m
+[0;32mI (845) spi_flash: detected chip: gd[0m
+[0;32mI (845) spi_flash: flash io: qio[0m
+[0;32mI (846) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (846) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (847) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (848) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (864) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (864) esp_core_dump_flash: Found core dump 37924 bytes in flash @ 0x778000[0m
+[0;32mI (865) coexist: coex firmware version: 4482466[0m
+[0;32mI (865) coexist: coexist rom version e7ae62f[0m
+[0;32mI (866) main_task: Started on CPU0[0m
+[0;32mI (867) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (867) main_task: Calling app_main()[0m
+[0;31mE (875) USE_GIZWITS_EXAMPLE: nvs_flash_init failed: 0[0m
+[0;33mW (875) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (875) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (876) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (883) DRV8311: ES8311 in Slave mode[0m
+[0;32mI (893) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) AUDIO_HAL: Codec mode is 3, Ctrl:1[0m
+[0;32mI (903) USER_STORAGE: Loaded volume: 80%[0m
+[0;32mI (903) USE_GIZWITS_EXAMPLE: volume: 80[0m
+[0;32mI (911) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (911) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (912) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (913) audio processor: Create audio player audio stream[0m
+[0;32mI (914) MP3_DECODER: MP3 init[0m
+[0;32mI (914) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (915) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (916) AUDIO_PIPELINE: link el->rb, el:0x3c1c612c, tag:audio_player_spiffs, rb:0x3c1c698c[0m
+[0;32mI (917) AUDIO_PIPELINE: link el->rb, el:0x3c1c67d4, tag:audio_player_dec, rb:0x3c1c89d4[0m
+[0;31mE (918) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (919) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (920) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (921) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (922) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (923) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c612c] Element task created[0m
+[0;32mI (924) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (925) AUDIO_ELEMENT: [audio_player_dec-0x3c1c67d4] Element task created[0m
+[0;32mI (926) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (927) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c63e8] Element task created[0m
+[0;32mI (928) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6736412 Bytes, Inter:267519 Bytes, Dram:267519 Bytes, Dram largest free:172032Bytes
+[0m
+[0;32mI (930) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (934) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (936) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (936) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (937) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (937) MP3_DECODER: MP3 opened[0m
+[0;32mI (938) CODEC_ELEMENT_HELPER: The element is 0x3c1c67d4. The reserve data 2 is 0x0.[0m
+[0;32mI (941) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (942) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (944) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (945) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (945) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (947) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (947) STORAGE: Verification successful[0m
+[0;32mI (947) STORAGE: auth_key: 4ee835a3cb88451b8d7a49adf336ff8b[0m
+[0;32mI (948) STORAGE: did: nd7ec83a[0m
+[0;32mI (948) STORAGE: crc: 3066[0m
+
+
+-----------auth successful------------
+
+[0;32mI (949) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (950) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (951) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (952) TOOL: Failed to get MAC address[0m
+[0;32mI (952) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (954) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (956) pp: pp rom version: e7ae62f[0m
+[0;32mI (956) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (957) wifi:wifi driver task: 3fcc39d0, prio:23, stack:3584, core=0[0m
+[0;32mI (961) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (961) wifi:wifi certification version: v7.0[0m
+[0;32mI (962) wifi:config NVS flash: enabled[0m
+[0;32mI (962) wifi:config nano formating: disabled[0m
+[0;32mI (962) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (963) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (963) wifi:Init management short buffer num: 32[0m
+[0;32mI (964) wifi:Init static tx buffer num: 16[0m
+[0;32mI (964) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (965) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (965) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (966) wifi:Init static rx buffer num: 16[0m
+[0;32mI (966) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (967) wifi_init: rx ba win: 32[0m
+[0;32mI (967) wifi_init: accept mbox: 6[0m
+[0;32mI (967) wifi_init: tcpip mbox: 64[0m
+[0;32mI (968) wifi_init: udp mbox: 12[0m
+[0;32mI (968) wifi_init: tcp mbox: 12[0m
+[0;32mI (969) wifi_init: tcp tx win: 65534[0m
+[0;32mI (969) wifi_init: tcp rx win: 65534[0m
+[0;32mI (970) wifi_init: tcp mss: 1440[0m
+[0;32mI (970) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (971) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (972) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (974) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (1007) wifi:mode : sta (94:a9:90:19:8a:6c)[0m
+[0;32mI (1008) wifi:enable tsf[0m
+[0;32mI (1009) WiFi: WiFi STA ready[0m
+[0;32mI (1010) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (1013) WiFi: wifi_connect finished.[0m
+[0;32mI (1019) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1019) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1042) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1075) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1095) wifi:connected with Coze_2.4G, aid = 1, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1096) wifi:security: WPA2-PSK, phy: bgn, rssi: -35[0m
+[0;32mI (1097) wifi:pm start, type: 1[0m
+
+[0;32mI (1097) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1097) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1123) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:2, winSize:64[0m
+[0;32mI (1177) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1384) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1752) MP3_DECODER: Closed[0m
+[0;32mI (1791) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1792) audio processor: [ * ] Stop event received[0m
+[0;33mW (1792) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1793) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1793) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1794) audio processor: [ * ] Stop event received[0m
+[0;32mI (2099) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2100) WiFi: Got IP: 192.168.1.100[0m
+[0;32mI (2100) user_api: User event: WiFi reconnected[0m
+[0;32mI (2100) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2101) user_api: User event: WiFi connected[0m
+[0;32mI (2102) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2103) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2104) WiFi: run wifi_connected_cb[0m
+[0;32mI (2104) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2105) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2106) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2106) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2107) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2108) audio processor: recorder_pipeline_open[0m
+[0;32mI (2109) audio processor: Create audio pipeline for recording[0m
+[0;32mI (2109) audio processor: Create player audio stream[0m
+[0;32mI (2111) audio processor:  Register all player elements to audio pipeline[0m
+[0;32mI (2111) audio processor:  Link all player elements to audio pipeline[0m
+[0;32mI (2112) AUDIO_PIPELINE: link el->rb, el:0x3c1ca910, tag:record_i2s, rb:0x3c1cad68[0m
+[0;32mI (2113) audio processor: player_pipeline_open[0m
+[0;32mI (2113) audio processor: Create audio pipeline for playback[0m
+[0;32mI (2114) audio processor: Create playback audio stream[0m
+[0;32mI (2115) audio_stream_8311: Create opus decoder[0m
+[0;33mW (2116) I2S_STREAM_IDF5.x: I2S(2) already startup[0m
+[0;32mI (2116) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (2117) audio processor: Link playback element together raw-->audio_decoder-->rsp-->i2s_stream-->[codec_chip][0m
+[0;32mI (2119) audio processor: player pipe start running[0m
+[0;32mI (2129) AUDIO_PIPELINE: link el->rb, el:0x3c1ccec4, tag:player_raw, rb:0x3c1cd5b0[0m
+[0;32mI (2129) AUDIO_PIPELINE: link el->rb, el:0x3c1cd00c, tag:player_dec, rb:0x3c1cf5f8[0m
+[0;32mI (2130) AUDIO_ELEMENT: [player_raw-0x3c1ccec4] Element task created[0m
+[0;32mI (2130) AUDIO_THREAD: The player_dec task allocate stack on external memory[0m
+[0;32mI (2132) AUDIO_ELEMENT: [player_dec-0x3c1cd00c] Element task created[0m
+[0;32mI (2133) AUDIO_THREAD: The player_rsp task allocate stack on external memory[0m
+[0;32mI (2133) AUDIO_ELEMENT: [player_rsp-0x3c1cd468] Element task created[0m
+[0;32mI (2134) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6550132 Bytes, Inter:192147 Bytes, Dram:192147 Bytes, Dram largest free:96256Bytes
+[0m
+[0;32mI (2136) AUDIO_ELEMENT: [player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2137) AUDIO_ELEMENT: [player_rsp] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2138) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2138) RSP_FILTER: sample rate of source data : 16000, channel of source data : 1, sample rate of destination data : 16000, channel of destination data : 2[0m
+[0;32mI (2138) AUDIO_THREAD: The record_i2s task allocate stack on internal memory[0m
+[0;32mI (2141) AUDIO_ELEMENT: [record_i2s-0x3c1ca910] Element task created[0m
+[0;32mI (2142) AUDIO_ELEMENT: [record_raw-0x3c1cac0c] Element task created[0m
+[0;32mI (2143) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6514592 Bytes, Inter:188183 Bytes, Dram:188183 Bytes, Dram largest free:94208Bytes
+[0m
+[0;32mI (2144) AUDIO_ELEMENT: [record_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2146) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2146) audio processor: player pipe start running[0m
+[0;31mE (2147) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2147) MODEL_LOADER: The storage free size is 24576 KB[0m
+[0;32mI (2148) MODEL_LOADER: The partition size is 4096 KB[0m
+[0;32mI (2149) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (2149) RECORDER_SR: The first wakenet model: wn9_nihaoxiaoxin_tts
+[0m
+[0;32mI (2150) AFE_SR: afe interface for speech recognition
+[0m
+[0;32mI (2151) AFE_SR: AFE version: SR_V220727
+[0m
+[0;33mW (2152) SR_SYS: Data cache recommends 64KB[0m
+[0;33mW (2152) SR_SYS: Data cache line recommends 64B[0m
+[0;32mI (2153) AFE_SR: Initial auido front-end, total channel: 2, mic num: 1, ref num: 1
+[0m
+[0;32mI (2154) AFE_SR: aec_init: 1, se_init: 1, vad_init: 1
+[0m
+[0;32mI (2155) AFE_SR: wakenet_init: 1
+[0m
+MC Quantized wakenet9: wakenet9l_tts1h8_你好小鑫_3_0.635_0.639, tigger:v3, mode:0, p:0, (Sep  4 2024 11:49:31)
+[0;32mI (2254) AFE_SR: wake num: 1, mode: 0, (Sep  4 2024 11:49:31)
+[0m
+[0;31mE (2254) RECORDER_ENCODER: recorder_encoder.c:143 (recorder_encoder_create): Got NULL Pointer[0m
+[0;33mW (2255) RECORDER_SR: Multinet is not enabled in SDKCONFIG[0m
+[0;32mI (2255) AUDIO_THREAD: The feed_task task allocate stack on external memory[0m
+[0;32mI (2257) AUDIO_THREAD: The fetch_task task allocate stack on external memory[0m
+[0;32mI (2257) AUDIO_THREAD: The recorder_task task allocate stack on external memory[0m
+[0;32mI (2340) AUDIO_RECORDER: RECORDER_CMD_TRIGGER_START[0m
+[0;31mE (2340) DISPATCHER: exe first list: 0x0[0m
+[0;31mE (2340) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2341) DISPATCHER: dispatcher_event_task is running...[0m
+[0;32mI (2341) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_START[0m
+[0;32mI (2341) AUDIO_THREAD: The esp_dispatcher task allocate stack on internal memory[0m
+[0;31mE (2343) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2344) AUDIO_THREAD: The voice_read_task task allocate stack on external memory[0m
+[0;32mI (2344) user_api: User event: Standby[0m
+[0;32mI (2426) AUDIO_THREAD: The audio_play task allocate stack on external memory[0m
+[0;31mE (2426) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2426) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2427) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (2428) STORAGE: storage_load_bootstrap: 1[0m
+gatProvision url:http://agent.gizwitsapi.com/v2/devices/nd7ec83a/bootstrap
+Server: agent.gizwitsapi.com
+Port: 80
+Path: /v2/devices/nd7ec83a/bootstrap
+[0;32mI (2431) gsever: Generated passcode length: 10[0m
+Generated Request:
+GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: QMBHMAAIBR
+X-Sign-Token: efdb19734efd97d49f83c4358eebe43eea4a36123dabe9bfc9057a38b9a8f231
+X-Trace-Id: 335431818a1f4258b56462adfb9cc6a0
+
+
+[0;32mI (2434) https: Initiating HTTP request[0m
+server: agent.gizwitsapi.com
+port: 80
+content: GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: QMBHMAAIBR
+X-Sign-Token: efdb19734efd97d49f83c4358eebe43eea4a36123dabe9bfc9057a38b9a8f231
+X-Trace-Id: 335431818a1f4258b56462adfb9cc6a0
+
+
+[0;32mI (2473) https: DNS lookup succeeded. IP=193.112.237.214[0m
+[0;32mI (2474) https: ... allocated socket[0m
+[0;32mI (2481) https: ... connected[0m
+[0;32mI (2484) https: ... socket send success[0m
+[0;32mI (2484) wifi:<ba-add>idx:1 (ifx:0, a4:1a:3a:ba:5d:f0), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2485) https: ... set socket receiving timeout success[0m
+[0;32mI (2500) https: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (2501) https: Starting again![0m
+Response: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-b315585aaac6d1eec9c3c21960f6a830-69ebf4113d6618ac-00
+X-Sign-Etag: c1e8bd41b8abdfb3db915384455a0dba37c70da9bc69cbf4ba0e951b10166f7d
+Date: Mon, 31 Mar 2025 06:38:55 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10
+[0;32mI (2504) gsever: Response header: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-b315585aaac6d1eec9c3c21960f6a830-69ebf4113d6618ac-00
+X-Sign-Etag: c1e8bd41b8abdfb3db915384455a0dba37c70da9bc69cbf4ba0e951b10166f7d
+Date: Mon, 31 Mar 2025 06:38:55 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+[0;32mI (2509) gsever: Status code: 200[0m
+[0;32mI (2509) gsever: Response body: address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+separator: =114.132.156.204
+separator: =1883
+separator: =360
+separator: =10
+[0;32mI (2511) mqtt_example: mqtt_app_start[0m
+[0;32mI (2512) mqtt_example: MQTT Configuration:[0m
+[0;32mI (2512) mqtt_example:   Address: '114.132.156.204'[0m
+[0;32mI (2513) mqtt_example:   Port: '1883'[0m
+[0;32mI (2514) gsever: Generated passcode length: 10[0m
+Received message on topic: llm/nd7ec83a/config/response
+in_str:{"method":"websocket.auth.response","body":{"platform_type":1,"token_quota":500000,"coze_websocket":{"bot_id":"7483500323458465833","voice_id":"7426720361753968677","user_id":"nd7ec83a","conv_id":"7486755284011204647","access_token":"czs_hZvL55iqhzL2bDmr5hQP3uxKnSHr2eUBocDNJlhY3jk0Am9a5bcokIUHSd8cvOtTa","expires_in":3540}}}
+[0;32mI (3004) COZE_SOCKET: WebSocket Configuration:[0m
+[0;32mI (3004) COZE_SOCKET: URI: ws://ws.coze.cn/v1/chat?bot_id=7483500323458465833[0m
+[0;32mI (3005) COZE_SOCKET: Transport: TCP[0m
+[0;32mI (3005) COZE_SOCKET: Network timeout: 2000 ms[0m
+[0;32mI (3006) COZE_SOCKET: Registering WebSocket events...[0m
+[0;32mI (3007) COZE_SOCKET: Starting WebSocket client...[0m
+[0;32mI (3007) websocket_client: Started[0m
+[0;32mI (3008) COZE_SOCKET: WebSocket client initialized successfully[0m
+[0;32mI (3331) COZE_SOCKET: WebSocket 连接成功[0m
+[0;32mI (3332) COZE_SOCKET: init_config_message: {"id":"2488827","event_type":"chat.update","data":{"chat_config":{"auto_save_history":true,"conversation_id":"7486755284011204647","user_id":"nd7ec83a","meta_data":{},"custom_variables":{},"extra_params":{}},"need_play_prologue":true,"turn_detection": {"type": "server_vad","prefix_padding_ms": 300,"silence_duration_ms": 300},"input_audio":{"format":"pcm","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"output_audio":{"codec":"opus","opus_config":{"use_cbr":true,"frame_size_ms":60,"limit_config":{"period":1,"max_frame_num":60}},"speech_rate":0,"voice_id":"7426720361753968677"}}}[0m
+[0;32mI (3341) COZE_SOCKET: Sent init config message with event_id: 2488827[0m
+[0;32mI (3341) user_api: User event: Standby[0m
+[0;32mI (3342) COZE_SOCKET: set_recording: true[0m
+[0;32mI (3479) COZE_SOCKET: chat.created[0m
+[0;32mI (3485) COZE_SOCKET: Unknown event: chat.updated[0m
+[0;32mI (3901) COZE_SOCKET: agent_is_pushing: true[0m
+[0;33mW (3916) audio processor: player pipe is already running state[0m
+[0;32mI (3916) user_api: User event: AI speaking[0m
+[0;32mI (3916) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (4465) WiFi: wifi_init finished.[0m
+MAC address: 94A990198A6C
+Version: WS010407 
+[0;32mI (4466) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (4466) main_task: Returned from app_main()[0m
+[0;32mI (4900) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (4952) COZE_SOCKET: rec_engine_cb - AUDIO_REC_VAD_START[0m
+[0;32mI (5467) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (6013) COZE_SOCKET: rec_engine_cb - AUDIO_REC_VAD_END[0m
+[0;32mI (6470) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (7470) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (8470) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (9309) user_api: User event: Standby[0m
+[0;32mI (9309) COZE_SOCKET: Buffer empty, stopping playback[0m
+[0;31mE (9470) sdkService: last_audio_time: 7626813, current_time: 8626504, offset_time: 999691[0m
+[0;31mE (11470) sdkService: last_audio_time: 7626813, current_time: 10626503, offset_time: 2999690[0m
+[0;31mE (13470) sdkService: last_audio_time: 7626813, current_time: 12626504, offset_time: 4999691[0m
+[0;31mE (15471) sdkService: last_audio_time: 7626813, current_time: 14627573, offset_time: 7000760[0m
+[0;31mE (17471) sdkService: last_audio_time: 7626813, current_time: 16627503, offset_time: 9000690[0m
+[0;31mE (19471) sdkService: last_audio_time: 7626813, current_time: 18628180, offset_time: 11001367[0m
+[0;31mE (21474) sdkService: last_audio_time: 7626813, current_time: 20630504, offset_time: 13003691[0m
+[0;31mE (23474) sdkService: last_audio_time: 7626813, current_time: 22630660, offset_time: 15003847[0m
+[0;31mE (25474) sdkService: last_audio_time: 7626813, current_time: 24630891, offset_time: 17004078[0m
+[0;31mE (27475) sdkService: last_audio_time: 7626813, current_time: 26631573, offset_time: 19004760[0m
+[0;31mE (29475) sdkService: last_audio_time: 7626813, current_time: 28631580, offset_time: 21004767[0m
+[0;31mE (31475) sdkService: last_audio_time: 7626813, current_time: 30631558, offset_time: 23004745[0m
+[0;31mE (33476) sdkService: last_audio_time: 7626813, current_time: 32632517, offset_time: 25005704[0m
+[0;31mE (35476) sdkService: last_audio_time: 7626813, current_time: 34632555, offset_time: 27005742[0m
+[0;31mE (37476) sdkService: last_audio_time: 7626813, current_time: 36632504, offset_time: 29005691[0m
+[0;31mE (39476) sdkService: last_audio_time: 7626813, current_time: 38633023, offset_time: 31006210[0m
+[0;31mE (41476) sdkService: last_audio_time: 7626813, current_time: 40632502, offset_time: 33005689[0m
+[0;31mE (43476) sdkService: last_audio_time: 7626813, current_time: 42632507, offset_time: 35005694[0m
+[0;31mE (45476) sdkService: last_audio_time: 7626813, current_time: 44632506, offset_time: 37005693[0m
+[0;31mE (47476) sdkService: last_audio_time: 7626813, current_time: 46632503, offset_time: 39005690[0m
+[0;31mE (49476) sdkService: last_audio_time: 7626813, current_time: 48632548, offset_time: 41005735[0m
+[0;31mE (51477) sdkService: last_audio_time: 7626813, current_time: 50633955, offset_time: 43007142[0m
+[0;31mE (53477) sdkService: last_audio_time: 7626813, current_time: 52633597, offset_time: 45006784[0m
+[0;31mE (55478) sdkService: last_audio_time: 7626813, current_time: 54634506, offset_time: 47007693[0m
+[0;31mE (57479) sdkService: last_audio_time: 7626813, current_time: 56635506, offset_time: 49008693[0m
+[0;31mE (59479) sdkService: last_audio_time: 7626813, current_time: 58635505, offset_time: 51008692[0m
+[0;31mE (61479) sdkService: last_audio_time: 7626813, current_time: 60635505, offset_time: 53008692[0m
+[0;31mE (63479) sdkService: last_audio_time: 7626813, current_time: 62635504, offset_time: 55008691[0m
+[0;31mE (65479) sdkService: last_audio_time: 7626813, current_time: 64635508, offset_time: 57008695[0m
+[0;31mE (67479) sdkService: last_audio_time: 7626813, current_time: 66635507, offset_time: 59008694[0m
+[0;31mE (69479) sdkService: last_audio_time: 7626813, current_time: 68635504, offset_time: 61008691[0m
+[0;31mE (71479) sdkService: last_audio_time: 7626813, current_time: 70635511, offset_time: 63008698[0m
+[0;31mE (73479) sdkService: last_audio_time: 7626813, current_time: 72635504, offset_time: 65008691[0m
+[0;31mE (75480) sdkService: last_audio_time: 7626813, current_time: 74636504, offset_time: 67009691[0m
+[0;31mE (77480) sdkService: last_audio_time: 7626813, current_time: 76636503, offset_time: 69009690[0m
+[0;31mE (79480) sdkService: last_audio_time: 7626813, current_time: 78636504, offset_time: 71009691[0m
+[0;31mE (81480) sdkService: last_audio_time: 7626813, current_time: 80636505, offset_time: 73009692[0m
+[0;31mE (83480) sdkService: last_audio_time: 7626813, current_time: 82636507, offset_time: 75009694[0m
+[0;31mE (85480) sdkService: last_audio_time: 7626813, current_time: 84636512, offset_time: 77009699[0m
+[0;31mE (87480) sdkService: last_audio_time: 7626813, current_time: 86636505, offset_time: 79009692[0m
+[0;31mE (89480) sdkService: last_audio_time: 7626813, current_time: 88636503, offset_time: 81009690[0m
+[0;31mE (91480) sdkService: last_audio_time: 7626813, current_time: 90636506, offset_time: 83009693[0m
+[0;31mE (93480) sdkService: last_audio_time: 7626813, current_time: 92636515, offset_time: 85009702[0m
+[0;31mE (95480) sdkService: last_audio_time: 7626813, current_time: 94636504, offset_time: 87009691[0m
+[0;31mE (97482) sdkService: last_audio_time: 7626813, current_time: 96638529, offset_time: 89011716[0m
+[0;31mE (99482) sdkService: last_audio_time: 7626813, current_time: 98638505, offset_time: 91011692[0m
+[0;31mE (101483) sdkService: last_audio_time: 7626813, current_time: 100639508, offset_time: 93012695[0m
+[0;31mE (103485) sdkService: last_audio_time: 7626813, current_time: 102641504, offset_time: 95014691[0m
+[0;31mE (105485) sdkService: last_audio_time: 7626813, current_time: 104641806, offset_time: 97014993[0m
+[0;31mE (107485) sdkService: last_audio_time: 7626813, current_time: 106641512, offset_time: 99014699[0m
+[0;31mE (109485) sdkService: last_audio_time: 7626813, current_time: 108641503, offset_time: 101014690[0m
+[0;31mE (111485) sdkService: last_audio_time: 7626813, current_time: 110641506, offset_time: 103014693[0m
+[0;31mE (113485) sdkService: last_audio_time: 7626813, current_time: 112641503, offset_time: 105014690[0m
+[0;31mE (115485) sdkService: last_audio_time: 7626813, current_time: 114641504, offset_time: 107014691[0m
+[0;31mE (117485) sdkService: last_audio_time: 7626813, current_time: 116641505, offset_time: 109014692[0m
+[0;31mE (119485) sdkService: last_audio_time: 7626813, current_time: 118641504, offset_time: 111014691[0m
+[0;31mE (121485) sdkService: last_audio_time: 7626813, current_time: 120641503, offset_time: 113014690[0m
+[0;31mE (123486) sdkService: last_audio_time: 7626813, current_time: 122642510, offset_time: 115015697[0m
+[0;31mE (125486) sdkService: last_audio_time: 7626813, current_time: 124642503, offset_time: 117015690[0m
+[0;32mI (126014) user_api: User event: Sleep[0m
+[0;32mI (126014) audio processor: player pipe stop running[0m
+[0;32mI (126014) audio processor: audio_tone_play: spiffs://spiffs/converted_sleep.mp3[0m
+[0;32mI (126015) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (126016) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1c612c] Element task created[0m
+[0;32mI (126017) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (126018) AUDIO_ELEMENT: [audio_player_dec-0x3c1c67d4] Element task created[0m
+[0;32mI (126019) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (126020) AUDIO_ELEMENT: [audio_player_i2s-0x3c1c63e8] Element task created[0m
+[0;32mI (126021) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:3555160 Bytes, Inter:113679 Bytes, Dram:113679 Bytes, Dram largest free:31744Bytes
+[0m
+[0;32mI (126023) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (126024) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (126025) MP3_DECODER: MP3 opened[0m
+[0;32mI (126025) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (126026) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (126027) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_END[0m
+[0;32mI (126031) SPIFFS_STREAM: File size is 7568 byte, pos:0[0m
+[0;32mI (126033) CODEC_ELEMENT_HELPER: The element is 0x3c1c67d4. The reserve data 2 is 0x0.[0m
+[0;32mI (126040) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=2[0m
+[0;33mW (126076) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (126077) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (126858) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (127223) MP3_DECODER: Closed[0m
+[0;32mI (127242) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (127243) audio processor: [ * ] Stop event received[0m
+[0;33mW (127243) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (127244) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (127245) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (127255) audio processor: [ * ] Stop event received[0m
+[0;32mI (127486) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (129486) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (131486) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (133486) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (135486) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (137487) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (139487) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (141487) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (143488) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (145488) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (147489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (149489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (151489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (153489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (155489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (157489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (159489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (161489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (163489) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (165490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (167490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (169490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (171490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (173490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (175490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (177490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (179490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (181490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (183490) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (185491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (187491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (189491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (191491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (193491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (195491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (197491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (199491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (201491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (203491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (205491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (207491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (209491) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (211492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (213492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (215492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (217492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (219492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (221492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (223492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (225492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (227492) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (229494) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (231494) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (233494) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (235494) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (237495) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (239498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (241498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (243498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (245498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (247498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (249498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (251498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (253498) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (255499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (257499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (259499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (261499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (263499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (265499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (267499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (269499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (271499) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (273500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (275500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (277500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (279500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (281500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (283500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (285500) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (287501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (289501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (291501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (293501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (295501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (297501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (299501) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (301502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (303502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (305502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (307502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (309502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (311502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (313502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (315502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (317502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (319502) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (321503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (323503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (325503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (327503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (329503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (331503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (333503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (335503) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (337505) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (339505) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (341505) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (343505) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (345505) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (347506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (349506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (351506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (353506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (355506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (357506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (359506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (361506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (363506) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (365508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (367508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (369508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (371508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (373508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (375508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (377508) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (379510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (381510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (383510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (385510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (387510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (389510) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (391511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (393511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (395511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (397511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (399511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (401511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (403511) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (405512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (407512) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (409513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (411513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (413513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (415513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (417513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (419513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (421513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (423513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (425513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (427513) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (429514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (431514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (433514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (435514) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (437515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (439515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (441515) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (443516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (445516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (447516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (449516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (451516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (453516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (455516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (457516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (459516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (461516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (463516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (465516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (467516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (469516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (471516) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (473518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (475518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (477518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (479518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (481518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (483518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (485518) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (487520) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (489520) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (491520) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (493521) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (495521) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (497523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (499523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (501523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (503523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (505523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (507523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (509523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (511523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (513523) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (515525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (517525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (519525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (521525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (523525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (525525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (527525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (529525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (531525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (533525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (535525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (537525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (539525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (541525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (543525) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (545526) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (547526) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (549527) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (551527) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (553527) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (555528) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (557528) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (559528) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (561529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (563529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (565529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (567529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (569529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (571529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (573529) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (575530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (577530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (579530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (581530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (583530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (585530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (587530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (589530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (591530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (593530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (595530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (597530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (599530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (601530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (603530) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (605532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (607532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (609532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (611532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (613532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (615532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (617532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (619532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (621532) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (623534) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (625534) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (627534) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (629534) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (631534) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (633536) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (635536) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (637536) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (639536) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (641537) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (643539) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (645539) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (647539) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (649540) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (651540) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (653540) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (655540) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (657540) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (659541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (661541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (663541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (665541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (667541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (669541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (671541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (673541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (675541) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (677542) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (679543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (681543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (683543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (685543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (687543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (689543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (691543) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (693544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (695544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (697544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (699544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (701544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (703544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (705544) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (707545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (709545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (711545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (713545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (715545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (717545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (719545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (721545) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (723546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (725546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (727546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (729546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (731546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (733546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (735546) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (737548) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (739548) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (741550) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (743550) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (745550) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (747552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (749552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (751552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (753552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (755552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (757552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (759552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (761552) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (763553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (765553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (767553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (769553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (771553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (773553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (775553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (777553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (779553) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (781554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (783554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (785554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (787554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (789554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (791554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (793554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (795554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (797554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (799554) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (801555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (803555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (805555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (807555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (809555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (811555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (813555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (815555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (817555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (819555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (821555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (823555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (825555) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (827556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (829556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (831556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (833556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (835556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (837556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (839556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (841556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (843556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (845556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (847556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (849556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (851556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (853556) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (855557) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (857557) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (859559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (861559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (863559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (865559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (867559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (869559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (871559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (873559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (875559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (877559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (879559) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (881561) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (883562) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (885562) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (887564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (889564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (891564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (893564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (895564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (897564) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (899565) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (901565) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (903565) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (905565) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (907565) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (909566) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (911566) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (913566) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (915566) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (917567) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (919568) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (921568) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (923568) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (925568) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (927569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (929569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (931569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (933569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (935569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (937569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (939569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (941569) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (943570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (945570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (947570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (949570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (951570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (953570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (955570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (957570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (959570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (961570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (963570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (965570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (967570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (969570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (971570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (973570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (975570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (977570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (979570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (981570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (983570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (985570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (987570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (989570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (991570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (993570) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (995572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (997572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (999572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1001572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1003572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1005572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1007572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1009572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1011572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1013572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1015572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1017572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1019572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1021572) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1023574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1025574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1027574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1029574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1031574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1033574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1035574) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1037575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1039575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1041575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1043575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1045575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1047575) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1049576) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1051576) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1053577) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1055577) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1057577) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1059578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1061578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1063578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1065578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1067578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1069578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1071578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1073578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1075578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1077578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1079578) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1081579) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1083579) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1085579) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1087580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1089580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1091580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1093580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1095580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1097580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1099580) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1101581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1103581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1105581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1107581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1109581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1111581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1113581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1115581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1117581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1119581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1121581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1123581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1125581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1127581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1129581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1131581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1133581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1135581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1137581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1139581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1141581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1143581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1145581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1147581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1149581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1151581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1153581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1155581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1157581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1159581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1161581) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1163583) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1165583) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1167585) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1169585) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1171585) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1173587) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1175587) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1177589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1179589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1181589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1183589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1185589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1187589) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1189590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1191590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1193590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1195590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1197590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1199590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1201590) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1203591) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1205591) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1207591) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1209592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1211592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1213592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1215592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1217592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1219592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1221592) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1223593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1225593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1227593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1229593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1231593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1233593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1235593) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1237594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1239594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1241594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1243594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1245594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1247594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1249594) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1251595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1253595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1255595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1257595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1259595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1261595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1263595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1265595) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1267597) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1269597) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1271597) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1273597) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1275597) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1277599) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1279599) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1281601) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1283601) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1285601) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1287601) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1289601) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1291603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1293603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1295603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1297603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1299603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1301603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1303603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1305603) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1307604) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1309604) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1311604) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1313604) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1315604) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1317605) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1319605) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1321606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1323606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1325606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1327606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1329606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1331606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1333606) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1335607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1337607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1339607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1341607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1343607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1345607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1347607) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1349608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1351608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1353608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1355608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1357608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1359608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1361608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1363608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1365608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1367608) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1369609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1371609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1373609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1375609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1377609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1379609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1381609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1383609) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1385611) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1387611) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1389611) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1391612) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1393612) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1395614) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1397614) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1399616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1401616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1403616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1405616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1407616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1409616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1411616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1413616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1415616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1417616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1419616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1421616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1423616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1425616) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1427618) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1429618) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1431618) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1433618) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1435619) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1437619) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1439619) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1441619) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1443620) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1445620) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1447620) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1449620) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1451620) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1453621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1455621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1457621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1459621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1461621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1463621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1465621) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1467622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1469622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1471622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1473622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1475622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1477622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1479622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1481622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1483622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1485622) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1487623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1489623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1491623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1493623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1495623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1497623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1499623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1501623) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1503625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1505625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1507625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1509625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1511625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1513625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1515625) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1517626) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1519626) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1521626) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1523627) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1525627) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1527627) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1529627) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1531629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1533629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1535629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1537629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1539629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1541629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1543629) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1545631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1547631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1549631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1551631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1553631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1555631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1557631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1559631) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1561632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1563632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1565632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1567632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1569632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1571632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1573632) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1575633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1577633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1579633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1581633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1583633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1585633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1587633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1589633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1591633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1593633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1595633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1597633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1599633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1601633) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1603634) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1605634) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1607635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1609635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1611635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1613635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1615635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1617635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1619635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1621635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1623635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1625635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1627635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1629635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1631635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1633635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1635635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1637635) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1639637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1641637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1643637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1645637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1647637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1649637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1651637) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1653639) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1655639) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1657639) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1659639) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1661639) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1663641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1665641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1667641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1669641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1671641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1673641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1675641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1677641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1679641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1681641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1683641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1685641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1687641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1689641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1691641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1693641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1695641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1697641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1699641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1701641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1703641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1705641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1707641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1709641) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1711642) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1713642) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1715643) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1717643) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1719643) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1721643) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1723643) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1725644) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1727644) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1729644) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1731646) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1733646) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1735646) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1737646) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1739646) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1741647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1743647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1745647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1747647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1749647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1751647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1753647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1755647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1757647) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1759648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1761648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1763648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1765648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1767648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1769648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1771648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1773648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1775648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1777648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1779648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1781648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1783648) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1785649) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1787649) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1789650) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1791650) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1793652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1795652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1797652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1799652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1801652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1803652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1805652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1807652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1809652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1811652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1813652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1815652) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1817654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1819654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1821654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1823654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1825654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1827654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1829654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1831654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1833654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1835654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1837654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1839654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1841654) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1843655) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1845655) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1847656) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1849656) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1851656) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1853657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1855657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1857657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1859657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1861657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1863657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1865657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1867657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1869657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1871657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1873657) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1875658) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1877658) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1879658) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1881659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1883659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1885659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1887659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1889659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1891659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1893659) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1895660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1897660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1899660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1901660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1903660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1905660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1907660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1909660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1911660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1913660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1915660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1917660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1919660) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1921661) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1923661) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1925663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1927663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1929663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1931663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1933663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1935663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1937663) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1939664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1941664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1943664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1945664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1947664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1949664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1951664) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1953666) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1955666) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1957668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1959668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1961668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1963668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1965668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1967668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1969668) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1971669) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1973671) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1975671) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1977671) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1979672) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1981672) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1983672) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1985672) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1987672) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1989673) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1991673) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1993674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1995674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1997674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1999674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2001674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2003674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2005674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2007674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2009674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2011674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2013674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (2015674) sdkService: Sleep flag is set, exiting task[0m
+[0;32mI (1429) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1798) MP3_DECODER: Closed[0m
+[0;32mI (1837) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1837) audio processor: [ * ] Stop event received[0m
+[0;33mW (1837) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1838) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1839) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1840) audio processor: [ * ] Stop event received[0m
+[0;32mI (2137) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2138) WiFi: Got IP: 192.168.1.100[0m
+[0;32mI (2138) user_api: User event: WiFi reconnected[0m
+[0;32mI (2138) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2139) user_api: User event: WiFi connected[0m
+[0;32mI (2140) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2141) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (2142) WiFi: run wifi_connected_cb[0m
+[0;32mI (2142) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (2143) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2144) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (2144) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (2145) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2146) audio processor: recorder_pipeline_open[0m
+[0;32mI (2147) audio processor: Create audio pipeline for recording[0m
+[0;32mI (2147) audio processor: Create player audio stream[0m
+[0;32mI (2149) audio processor:  Register all player elements to audio pipeline[0m
+[0;32mI (2149) audio processor:  Link all player elements to audio pipeline[0m
+[0;32mI (2150) AUDIO_PIPELINE: link el->rb, el:0x3c1ca910, tag:record_i2s, rb:0x3c1cad78[0m
+[0;32mI (2151) audio processor: player_pipeline_open[0m
+[0;32mI (2151) audio processor: Create audio pipeline for playback[0m
+[0;32mI (2152) audio processor: Create playback audio stream[0m
+[0;32mI (2153) audio_stream_8311: Create opus decoder[0m
+[0;33mW (2154) I2S_STREAM_IDF5.x: I2S(2) already startup[0m
+[0;32mI (2154) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (2155) audio processor: Link playback element together raw-->audio_decoder-->rsp-->i2s_stream-->[codec_chip][0m
+[0;32mI (2157) audio processor: player pipe start running[0m
+[0;32mI (2167) AUDIO_PIPELINE: link el->rb, el:0x3c1cced4, tag:player_raw, rb:0x3c1cd5c0[0m
+[0;32mI (2167) AUDIO_PIPELINE: link el->rb, el:0x3c1cd01c, tag:player_dec, rb:0x3c1cf608[0m
+[0;32mI (2168) AUDIO_ELEMENT: [player_raw-0x3c1cced4] Element task created[0m
+[0;32mI (2168) AUDIO_THREAD: The player_dec task allocate stack on external memory[0m
+[0;32mI (2170) AUDIO_ELEMENT: [player_dec-0x3c1cd01c] Element task created[0m
+[0;32mI (2171) AUDIO_THREAD: The player_rsp task allocate stack on external memory[0m
+[0;32mI (2171) AUDIO_ELEMENT: [player_rsp-0x3c1cd478] Element task created[0m
+[0;32mI (2172) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6550136 Bytes, Inter:192147 Bytes, Dram:192147 Bytes, Dram largest free:96256Bytes
+[0m
+[0;32mI (2174) AUDIO_ELEMENT: [player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2175) AUDIO_ELEMENT: [player_rsp] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2176) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2176) RSP_FILTER: sample rate of source data : 16000, channel of source data : 1, sample rate of destination data : 16000, channel of destination data : 2[0m
+[0;32mI (2176) AUDIO_THREAD: The record_i2s task allocate stack on internal memory[0m
+[0;32mI (2179) AUDIO_ELEMENT: [record_i2s-0x3c1ca910] Element task created[0m
+[0;32mI (2180) AUDIO_ELEMENT: [record_raw-0x3c1cac1c] Element task created[0m
+[0;32mI (2181) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6514596 Bytes, Inter:188183 Bytes, Dram:188183 Bytes, Dram largest free:94208Bytes
+[0m
+[0;32mI (2182) AUDIO_ELEMENT: [record_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (2184) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (2184) audio processor: player pipe start running[0m
+[0;31mE (2185) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2185) MODEL_LOADER: The storage free size is 24576 KB[0m
+[0;32mI (2186) MODEL_LOADER: The partition size is 4096 KB[0m
+[0;32mI (2187) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (2187) RECORDER_SR: The first wakenet model: wn9_nihaoxiaoxin_tts
+[0m
+[0;32mI (2188) AFE_SR: afe interface for speech recognition
+[0m
+[0;32mI (2189) AFE_SR: AFE version: SR_V220727
+[0m
+[0;33mW (2190) SR_SYS: Data cache recommends 64KB[0m
+[0;33mW (2190) SR_SYS: Data cache line recommends 64B[0m
+[0;32mI (2191) AFE_SR: Initial auido front-end, total channel: 2, mic num: 1, ref num: 1
+[0m
+[0;32mI (2192) AFE_SR: aec_init: 1, se_init: 1, vad_init: 1
+[0m
+[0;32mI (2193) AFE_SR: wakenet_init: 1
+[0m
+MC Quantized wakenet9: wakenet9l_tts1h8_你好小鑫_3_0.635_0.639, tigger:v3, mode:0, p:0, (Sep  4 2024 11:49:31)
+[0;32mI (2292) AFE_SR: wake num: 1, mode: 0, (Sep  4 2024 11:49:31)
+[0m
+[0;31mE (2292) RECORDER_ENCODER: recorder_encoder.c:143 (recorder_encoder_create): Got NULL Pointer[0m
+[0;33mW (2293) RECORDER_SR: Multinet is not enabled in SDKCONFIG[0m
+[0;32mI (2293) AUDIO_THREAD: The feed_task task allocate stack on external memory[0m
+[0;32mI (2295) AUDIO_THREAD: The fetch_task task allocate stack on external memory[0m
+[0;32mI (2295) AUDIO_THREAD: The recorder_task task allocate stack on external memory[0m
+[0;32mI (2380) AUDIO_RECORDER: RECORDER_CMD_TRIGGER_START[0m
+[0;31mE (2380) DISPATCHER: exe first list: 0x0[0m
+[0;31mE (2381) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2381) DISPATCHER: dispatcher_event_task is running...[0m
+[0;32mI (2381) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_START[0m
+[0;32mI (2381) AUDIO_THREAD: The esp_dispatcher task allocate stack on internal memory[0m
+[0;31mE (2383) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2384) user_api: User event: Standby[0m
+[0;32mI (2384) AUDIO_THREAD: The voice_read_task task allocate stack on external memory[0m
+[0;32mI (2466) AUDIO_THREAD: The audio_play task allocate stack on external memory[0m
+[0;31mE (2466) mqtt_example: MQTT client not initialized[0m
+[0;32mI (2466) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (2467) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (2468) STORAGE: storage_load_bootstrap: 1[0m
+gatProvision url:http://agent.gizwitsapi.com/v2/devices/nd7ec83a/bootstrap
+Server: agent.gizwitsapi.com
+Port: 80
+Path: /v2/devices/nd7ec83a/bootstrap
+[0;32mI (2470) gsever: Generated passcode length: 10[0m
+Generated Request:
+GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: TDMOGJDJEM
+X-Sign-Token: 6d6955440c3791743d83c6a75b8824c53774d4708cb7792a06543ff4ff6c1136
+X-Trace-Id: c147dbdec51a45fa94022179f3ac9af9
+
+
+[0;32mI (2474) https: Initiating HTTP request[0m
+server: agent.gizwitsapi.com
+port: 80
+content: GET /v2/devices/nd7ec83a/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: TDMOGJDJEM
+X-Sign-Token: 6d6955440c3791743d83c6a75b8824c53774d4708cb7792a06543ff4ff6c1136
+X-Trace-Id: c147dbdec51a45fa94022179f3ac9af9
+
+
+[0;32mI (2506) https: DNS lookup succeeded. IP=193.112.237.214[0m
+[0;32mI (2507) https: ... allocated socket[0m
+[0;32mI (2519) https: ... connected[0m
+[0;32mI (2521) https: ... socket send success[0m
+[0;32mI (2522) https: ... set socket receiving timeout success[0m
+[0;32mI (2528) wifi:<ba-add>idx:1 (ifx:0, a4:1a:3a:ba:5d:f0), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2552) https: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (2553) https: Starting again![0m
+Response: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-948bc6328cff2df7069694397074aa3d-c642fee3da596046-00
+X-Sign-Etag: bb98dd99a0b49347ce80b73f8332b2aa2c45a09d094f62e06e8a75fcdd29b66b
+Date: Mon, 31 Mar 2025 07:12:35 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10
+[0;32mI (2556) gsever: Response header: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-948bc6328cff2df7069694397074aa3d-c642fee3da596046-00
+X-Sign-Etag: bb98dd99a0b49347ce80b73f8332b2aa2c45a09d094f62e06e8a75fcdd29b66b
+Date: Mon, 31 Mar 2025 07:12:35 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+[0;32mI (2561) gsever: Status code: 200[0m
+[0;32mI (2561) gsever: Response body: address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+separator: =114.132.156.204
+separator: =1883
+separator: =360
+separator: =10
+[0;32mI (2564) mqtt_example: mqtt_app_start[0m
+[0;32mI (2564) mqtt_example: MQTT Configuration:[0m
+[0;32mI (2564) mqtt_example:   Address: '114.132.156.204'[0m
+[0;32mI (2566) mqtt_example:   Port: '1883'[0m
+[0;32mI (2566) gsever: Generated passcode length: 10[0m
+Received message on topic: llm/nd7ec83a/config/response
+in_str:{"method":"websocket.auth.response","body":{"platform_type":1,"token_quota":500000,"coze_websocket":{"bot_id":"7483500323458465833","voice_id":"7426720361753968677","user_id":"nd7ec83a","conv_id":"7486755284011204647","access_token":"czs_h7fdvIuK8NvPvTan5f0FmfYxSr2TZRGHmPZ6xUbdr8CwohezucxaSV9FFYQ7GxGEk","expires_in":3540}}}
+[0;32mI (3030) COZE_SOCKET: WebSocket Configuration:[0m
+[0;32mI (3030) COZE_SOCKET: URI: ws://ws.coze.cn/v1/chat?bot_id=7483500323458465833[0m
+[0;32mI (3030) COZE_SOCKET: Transport: TCP[0m
+[0;32mI (3031) COZE_SOCKET: Network timeout: 2000 ms[0m
+[0;32mI (3032) COZE_SOCKET: Registering WebSocket events...[0m
+[0;32mI (3032) COZE_SOCKET: Starting WebSocket client...[0m
+[0;32mI (3033) websocket_client: Started[0m
+[0;32mI (3033) COZE_SOCKET: WebSocket client initialized successfully[0m
+[0;32mI (3340) COZE_SOCKET: WebSocket 连接成功[0m
+[0;32mI (3341) COZE_SOCKET: init_config_message: {"id":"2481498","event_type":"chat.update","data":{"chat_config":{"auto_save_history":true,"conversation_id":"7486755284011204647","user_id":"nd7ec83a","meta_data":{},"custom_variables":{},"extra_params":{}},"need_play_prologue":true,"turn_detection": {"type": "server_vad","prefix_padding_ms": 300,"silence_duration_ms": 300},"input_audio":{"format":"pcm","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"output_audio":{"codec":"opus","opus_config":{"use_cbr":true,"frame_size_ms":60,"limit_config":{"period":1,"max_frame_num":60}},"speech_rate":0,"voice_id":"7426720361753968677"}}}[0m
+[0;32mI (3350) COZE_SOCKET: Sent init config message with event_id: 2481498[0m
+[0;32mI (3350) user_api: User event: Standby[0m
+[0;32mI (3351) COZE_SOCKET: set_recording: true[0m
+[0;32mI (3355) COZE_SOCKET: chat.created[0m
+[0;32mI (3499) COZE_SOCKET: Unknown event: chat.updated[0m
+[0;32mI (3926) COZE_SOCKET: agent_is_pushing: true[0m
+[0;33mW (3956) audio processor: player pipe is already running state[0m
+[0;32mI (3956) user_api: User event: AI speaking[0m
+[0;32mI (3956) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (4504) WiFi: wifi_init finished.[0m
+MAC address: 94A990198A6C
+Version: WS010407 
+[0;32mI (4505) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (4505) main_task: Returned from app_main()[0m
+[0;32mI (4996) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (5506) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (6510) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (7510) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (8510) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (9345) user_api: User event: Standby[0m
+[0;32mI (9345) COZE_SOCKET: Buffer empty, stopping playback[0m
+[0;31mE (9510) sdkService: last_audio_time: 7650401, current_time: 8650094, offset_time: 999693[0m
+[0;31mE (11510) sdkService: last_audio_time: 7650401, current_time: 10650095, offset_time: 2999694[0m
+[0;31mE (13510) sdkService: last_audio_time: 7650401, current_time: 12650095, offset_time: 4999694[0m
+[0;31mE (15511) sdkService: last_audio_time: 7650401, current_time: 14651095, offset_time: 7000694[0m
+[0;31mE (17513) sdkService: last_audio_time: 7650401, current_time: 16653094, offset_time: 9002693[0m
+[0;31mE (19513) sdkService: last_audio_time: 7650401, current_time: 18653277, offset_time: 11002876[0m
+[0;31mE (21514) sdkService: last_audio_time: 7650401, current_time: 20654096, offset_time: 13003695[0m
+[0;31mE (23515) sdkService: last_audio_time: 7650401, current_time: 22655094, offset_time: 15004693[0m
+[0;31mE (25515) sdkService: last_audio_time: 7650401, current_time: 24655099, offset_time: 17004698[0m
+[0;31mE (27516) sdkService: last_audio_time: 7650401, current_time: 26656102, offset_time: 19005701[0m
+[0;31mE (29517) sdkService: last_audio_time: 7650401, current_time: 28657110, offset_time: 21006709[0m

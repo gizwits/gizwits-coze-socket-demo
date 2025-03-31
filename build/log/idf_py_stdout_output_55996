@@ -1,0 +1,637 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d9
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1918
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe68
+load:0x403cb700,len:0x303c
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 31 2025 10:04:12[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (28) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (29) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (30) boot: Enabling RNG early entropy source...[0m
+[0;32mI (31) boot: Partition Table:[0m
+[0;32mI (31) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (32) boot:  0 nvs              WiFi data        01 02 00011000 00004000[0m
+[0;32mI (33) boot:  1 config_data      WiFi data        01 02 00015000 00002000[0m
+[0;32mI (34) boot:  2 otadata          OTA data         01 00 00017000 00002000[0m
+[0;32mI (35) boot:  3 phy_init         RF data          01 01 00019000 00001000[0m
+[0;32mI (36) boot:  4 ota_0            OTA app          00 10 00020000 00360000[0m
+[0;32mI (37) boot:  5 ota_1            OTA app          00 11 00380000 00360000[0m
+[0;32mI (37) boot:  6 flash_tone       Unknown data     01 27 006e0000 00064000[0m
+[0;32mI (38) boot:  7 auth_data        WiFi data        01 02 00744000 00002000[0m
+[0;32mI (39) boot:  8 local_data       WiFi data        01 02 00746000 00032000[0m
+[0;32mI (40) boot:  9 coredump         Unknown data     01 03 00778000 00010000[0m
+[0;32mI (41) boot: 10 model            Unknown data     01 82 00800000 00400000[0m
+[0;32mI (42) boot: 11 log_data         WiFi data        01 02 00d00000 00200000[0m
+[0;32mI (43) boot: End of partition table[0m
+[0;32mI (44) esp_image: segment 0: paddr=00020020 vaddr=3c150020 size=7aeb8h (503480) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0009aee0 vaddr=3fc9df00 size=05138h ( 20792) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=141c68h (1317992) map[0m
+[0;32mI (325) esp_image: segment 3: paddr=001e1c90 vaddr=3fca3038 size=0353ch ( 13628) load[0m
+[0;32mI (328) esp_image: segment 4: paddr=001e51d4 vaddr=40374000 size=19e1ch (106012) load[0m
+[0;32mI (360) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (360) boot: Disabling RNG early entropy source...[0m
+[0;32mI (362) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (362) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (363) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (363) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (363) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (364) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (365) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (365) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (366) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (367) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (368) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (369) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (369) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (369) esp_psram: Speed: 80MHz[0m
+[0;32mI (408) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (514) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (834) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (843) cpu_start: Pro cpu start user code[0m
+[0;32mI (843) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (843) app_init: Application information:[0m
+[0;32mI (843) app_init: Project name:     GizwitsRTC[0m
+[0;32mI (844) app_init: App version:      2[0m
+[0;32mI (844) app_init: Compile time:     Mar 31 2025 10:41:58[0m
+[0;32mI (845) app_init: ELF file SHA256:  661b88eb3...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (847) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (848) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (848) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (849) heap_init: At 3FCAAA08 len 0003ED08 (251 KiB): RAM[0m
+[0;32mI (850) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (851) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (851) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (852) esp_psram: Adding pool of 6316K of PSRAM memory to heap allocator[0m
+[0;32mI (853) spi_flash: detected chip: gd[0m
+[0;32mI (854) spi_flash: flash io: qio[0m
+[0;32mI (854) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (855) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (856) esp_core_dump_flash: Init core dump to flash[0m
+[0;32mI (857) esp_core_dump_flash: Found partition 'coredump' @ 778000 65536 bytes[0m
+[0;32mI (870) esp_core_dump_flash: Core dump data checksum is correct[0m
+[0;32mI (870) esp_core_dump_flash: Found core dump 30404 bytes in flash @ 0x778000[0m
+[0;32mI (870) coexist: coex firmware version: 4482466[0m
+[0;32mI (871) coexist: coexist rom version e7ae62f[0m
+[0;32mI (872) main_task: Started on CPU0[0m
+[0;32mI (873) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (873) main_task: Calling app_main()[0m
+[0;31mE (880) VolcRTCApp: nvs_flash_init failed: 0[0m
+[0;33mW (880) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (880) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (881) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (887) DRV8311: ES8311 in Slave mode[0m
+[0;32mI (897) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (901) AUDIO_HAL: Codec mode is 3, Ctrl:1[0m
+[0;32mI (907) USER_STORAGE: Loaded volume: 75%[0m
+[0;32mI (908) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (908) LED: gpio_init[0m
+[0;32mI (909) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (909) LED: Example configured to blink addressable LED![0m
+[0;32mI (910) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) USER_STORAGE: User storage initialized successfully[0m
+[0;32mI (913) USER_STORAGE: Loaded RGB color: (255, 255, 0)[0m
+[0;32mI (913) USER_STORAGE: Loaded brightness: 100%[0m
+[0;32mI (913) BoardInit: Applying saved RGB settings: R=255, G=255, B=0, Brightness=100%[0m
+[0;32mI (915) LED: Global LED brightness set to 100%[0m
+[0;32mI (915) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (916) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (917) CHARGE: Battery state changed: 0 -> 1[0m
+[0;32mI (918) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (919) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (920) BUTTON: Button 0 initialized on GPIO 14[0m
+[0;32mI (921) gpio: GPIO[38]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (922) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (923) BUTTON: Button 1 initialized on GPIO 38[0m
+[0;32mI (924) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (925) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (926) BUTTON: Button 2 initialized on GPIO 13[0m
+[0;32mI (926) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (928) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (929) BUTTON: Button 3 initialized on GPIO 12[0m
+[0;32mI (929) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (931) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (932) BUTTON: Button 4 initialized on GPIO 39[0m
+[0;32mI (1041) PERIPH_SPIFFS: Partition size: total: 369221, used: 289403[0m
+[0;32mI (1041) AUDIO_THREAD: The esp_periph task allocate stack on internal memory[0m
+[0;32mI (1041) audio processor: Create audio pipeline for audio player[0m
+[0;32mI (1042) audio processor: Create audio player audio stream[0m
+[0;32mI (1043) MP3_DECODER: MP3 init[0m
+[0;32mI (1044) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (1044) audio processor: Link playback element together raw-->audio_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (1046) AUDIO_PIPELINE: link el->rb, el:0x3c1d744c, tag:audio_player_spiffs, rb:0x3c1d7cac[0m
+[0;32mI (1047) AUDIO_PIPELINE: link el->rb, el:0x3c1d7af4, tag:audio_player_dec, rb:0x3c1d9cf4[0m
+[0;31mE (1048) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1049) AUDIO_THREAD: The audio_player_state_task task allocate stack on external memory[0m
+[0;31mE (1050) audio processor: player_pipeline_stop(363): player pipeline not initialized[0m
+[0;32mI (1051) audio processor: audio_tone_play: spiffs://spiffs/converted_turn_on.mp3[0m
+[0;32mI (1052) AUDIO_THREAD: The audio_player_spiffs task allocate stack on internal memory[0m
+[0;32mI (1053) AUDIO_ELEMENT: [audio_player_spiffs-0x3c1d744c] Element task created[0m
+[0;32mI (1054) AUDIO_THREAD: The audio_player_dec task allocate stack on external memory[0m
+[0;32mI (1055) AUDIO_ELEMENT: [audio_player_dec-0x3c1d7af4] Element task created[0m
+[0;32mI (1056) AUDIO_THREAD: The audio_player_i2s task allocate stack on internal memory[0m
+[0;32mI (1057) AUDIO_ELEMENT: [audio_player_i2s-0x3c1d7708] Element task created[0m
+[0;32mI (1058) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6630848 Bytes, Inter:232387 Bytes, Dram:232387 Bytes, Dram largest free:131072Bytes
+[0m
+[0;32mI (1060) AUDIO_ELEMENT: [audio_player_spiffs] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1064) SPIFFS_STREAM: File size is 5300 byte, pos:0[0m
+[0;33mW (1066) SPIFFS_STREAM: No more data, ret:0[0m
+[0;32mI (1066) AUDIO_ELEMENT: IN-[audio_player_spiffs] AEL_IO_DONE,0[0m
+[0;32mI (1067) AUDIO_ELEMENT: [audio_player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1067) MP3_DECODER: MP3 opened[0m
+[0;32mI (1068) CODEC_ELEMENT_HELPER: The element is 0x3c1d7af4. The reserve data 2 is 0x0.[0m
+[0;32mI (1071) audio processor: [ * ] Receive music info from wav decoder, sample_rates=16000, bits=16, ch=1[0m
+[0;32mI (1072) AUDIO_ELEMENT: [audio_player_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (1074) AUDIO_PIPELINE: Pipeline started[0m
+[0;31mE (1075) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1075) STORAGE: Found auth_data partition at offset 0x744000 with size 8192[0m
+[0;32mI (1077) STORAGE: WiFi config partition init result: 0[0m
+[0;32mI (1077) STORAGE: Verification successful[0m
+[0;32mI (1077) STORAGE: auth_key: 82a95cc7cfe04a48ba8856b2099a8007[0m
+[0;32mI (1078) STORAGE: did: nb47c6f2[0m
+[0;32mI (1078) STORAGE: crc: 2865[0m
+
+
+-----------auth successful------------
+
+[0;32mI (1079) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (1080) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (1081) STORAGE: storage_load_bootstrap: 1[0m
+[0;31mE (1082) TOOL: Failed to get MAC address[0m
+[0;32mI (1084) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (1084) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (1086) pp: pp rom version: e7ae62f[0m
+[0;32mI (1086) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1087) wifi:wifi driver task: 3fccc30c, prio:23, stack:3584, core=0[0m
+[0;32mI (1090) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (1091) wifi:wifi certification version: v7.0[0m
+[0;32mI (1091) wifi:config NVS flash: enabled[0m
+[0;32mI (1091) wifi:config nano formating: disabled[0m
+[0;32mI (1091) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (1092) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1092) wifi:Init management short buffer num: 32[0m
+[0;32mI (1093) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1094) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1094) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1094) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1095) wifi:Init static rx buffer num: 16[0m
+[0;32mI (1095) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (1096) wifi_init: rx ba win: 32[0m
+[0;32mI (1097) wifi_init: accept mbox: 6[0m
+[0;32mI (1097) wifi_init: tcpip mbox: 64[0m
+[0;32mI (1097) wifi_init: udp mbox: 12[0m
+[0;32mI (1098) wifi_init: tcp mbox: 12[0m
+[0;32mI (1098) wifi_init: tcp tx win: 65534[0m
+[0;32mI (1099) wifi_init: tcp rx win: 65534[0m
+[0;32mI (1099) wifi_init: tcp mss: 1440[0m
+[0;32mI (1100) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1101) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1101) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1103) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (1130) wifi:mode : sta (cc:ba:97:00:57:58)[0m
+[0;32mI (1131) wifi:enable tsf[0m
+[0;32mI (1132) WiFi: WiFi STA ready[0m
+[0;32mI (1133) WiFi: Found saved WiFi config, trying to connect...[0m
+[0;32mI (1135) WiFi: wifi_connect finished.[0m
+[0;32mI (1140) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1140) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1161) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1192) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1216) wifi:connected with Coze_2.4G, aid = 6, channel 6, 40D, bssid = a4:1a:3a:ba:5d:f0[0m
+[0;32mI (1216) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (1217) wifi:pm start, type: 1[0m
+
+[0;32mI (1217) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1218) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1229) wifi:<ba-add>idx:0 (ifx:0, a4:1a:3a:ba:5d:f0), tid:5, ssn:1, winSize:64[0m
+[0;32mI (1264) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1513) AUDIO_ELEMENT: IN-[audio_player_dec] AEL_IO_DONE,-2[0m
+[0;32mI (1882) MP3_DECODER: Closed[0m
+[0;32mI (1921) AUDIO_ELEMENT: IN-[audio_player_i2s] AEL_IO_DONE,-2[0m
+[0;32mI (1921) audio processor: [ * ] Stop event received[0m
+[0;33mW (1921) AUDIO_ELEMENT: [audio_player_spiffs] Element already stopped[0m
+[0;33mW (1922) AUDIO_ELEMENT: [audio_player_dec] Element already stopped[0m
+[0;33mW (1923) AUDIO_ELEMENT: [audio_player_i2s] Element already stopped[0m
+[0;32mI (1924) audio processor: [ * ] Stop event received[0m
+[0;32mI (2220) esp_netif_handlers: sta ip: 192.168.1.104, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2221) WiFi: Got IP: 192.168.1.104[0m
+[0;32mI (2221) user_api: User event: WiFi reconnected[0m
+[0;32mI (2322) WiFi: connected to ap SSID:Coze_2.4G password:12344321[0m
+[0;32mI (2322) user_api: User event: WiFi connected[0m
+[0;32mI (4423) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (4423) STORAGE: Found partition config_data at address 0x15000[0m
+[0;32mI (4424) WiFi: run wifi_connected_cb[0m
+[0;32mI (4424) NimBLE_BLE_PRPH: BLE not initialized, nothing to stop[0m
+[0;31mE (4425) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4425) COZE_SOCKET: socket_handler_init[0m
+[0;32mI (4426) COZE_SOCKET: Initializing WebSocket client[0m
+[0;31mE (4427) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4427) audio processor: recorder_pipeline_open[0m
+[0;32mI (4428) audio processor: Create audio pipeline for recording[0m
+[0;32mI (4429) audio processor: Create player audio stream[0m
+[0;32mI (4431) audio processor:  Register all player elements to audio pipeline[0m
+[0;32mI (4431) audio processor:  Link all player elements to audio pipeline[0m
+[0;32mI (4432) AUDIO_PIPELINE: link el->rb, el:0x3c1dbc30, tag:record_i2s, rb:0x3c1dc098[0m
+[0;32mI (4432) audio processor: player_pipeline_open[0m
+[0;32mI (4433) audio processor: Create audio pipeline for playback[0m
+[0;32mI (4434) audio processor: Create playback audio stream[0m
+[0;32mI (4435) audio_stream_8311: Create opus decoder[0m
+[0;33mW (4435) I2S_STREAM_IDF5.x: I2S(2) already startup[0m
+[0;32mI (4436) audio processor: Register all elements to playback pipeline[0m
+[0;32mI (4437) audio processor: Link playback element together raw-->audio_decoder-->rsp-->i2s_stream-->[codec_chip][0m
+[0;32mI (4438) audio processor: player pipe start running[0m
+[0;32mI (4449) AUDIO_PIPELINE: link el->rb, el:0x3c1de1f4, tag:player_raw, rb:0x3c1de8e0[0m
+[0;32mI (4449) AUDIO_PIPELINE: link el->rb, el:0x3c1de33c, tag:player_dec, rb:0x3c1e0928[0m
+[0;32mI (4450) AUDIO_ELEMENT: [player_raw-0x3c1de1f4] Element task created[0m
+[0;32mI (4451) AUDIO_THREAD: The player_dec task allocate stack on external memory[0m
+[0;32mI (4452) AUDIO_ELEMENT: [player_dec-0x3c1de33c] Element task created[0m
+[0;32mI (4453) AUDIO_THREAD: The player_rsp task allocate stack on external memory[0m
+[0;32mI (4453) AUDIO_ELEMENT: [player_rsp-0x3c1de798] Element task created[0m
+[0;32mI (4454) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6442184 Bytes, Inter:154627 Bytes, Dram:154627 Bytes, Dram largest free:59392Bytes
+[0m
+[0;32mI (4456) AUDIO_ELEMENT: [player_dec] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (4457) AUDIO_ELEMENT: [player_rsp] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (4458) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (4458) RSP_FILTER: sample rate of source data : 16000, channel of source data : 1, sample rate of destination data : 16000, channel of destination data : 2[0m
+[0;32mI (4458) AUDIO_THREAD: The record_i2s task allocate stack on internal memory[0m
+[0;32mI (4461) AUDIO_ELEMENT: [record_i2s-0x3c1dbc30] Element task created[0m
+[0;32mI (4462) AUDIO_ELEMENT: [record_raw-0x3c1dbf3c] Element task created[0m
+[0;32mI (4463) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:6406644 Bytes, Inter:150663 Bytes, Dram:150663 Bytes, Dram largest free:57344Bytes
+[0m
+[0;32mI (4465) AUDIO_ELEMENT: [record_i2s] AEL_MSG_CMD_RESUME,state:1[0m
+[0;32mI (4466) AUDIO_PIPELINE: Pipeline started[0m
+[0;32mI (4466) audio processor: player pipe start running[0m
+[0;31mE (4467) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4467) MODEL_LOADER: The storage free size is 24576 KB[0m
+[0;32mI (4468) MODEL_LOADER: The partition size is 4096 KB[0m
+[0;32mI (4469) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (4470) RECORDER_SR: The first wakenet model: wn9_nihaoxiaoxin_tts
+[0m
+[0;32mI (4470) AFE_SR: afe interface for speech recognition
+[0m
+[0;32mI (4471) AFE_SR: AFE version: SR_V220727
+[0m
+[0;33mW (4472) SR_SYS: Data cache recommends 64KB[0m
+[0;33mW (4472) SR_SYS: Data cache line recommends 64B[0m
+[0;32mI (4473) AFE_SR: Initial auido front-end, total channel: 2, mic num: 1, ref num: 1
+[0m
+[0;32mI (4474) AFE_SR: aec_init: 1, se_init: 1, vad_init: 1
+[0m
+[0;32mI (4475) AFE_SR: wakenet_init: 1
+[0m
+MC Quantized wakenet9: wakenet9l_tts1h8_你好小鑫_3_0.635_0.639, tigger:v3, mode:0, p:0, (Sep  4 2024 11:49:31)
+[0;32mI (4572) AFE_SR: wake num: 1, mode: 0, (Sep  4 2024 11:49:31)
+[0m
+[0;31mE (4572) RECORDER_ENCODER: recorder_encoder.c:143 (recorder_encoder_create): Got NULL Pointer[0m
+[0;33mW (4573) RECORDER_SR: Multinet is not enabled in SDKCONFIG[0m
+[0;32mI (4573) AUDIO_THREAD: The feed_task task allocate stack on external memory[0m
+[0;32mI (4575) AUDIO_THREAD: The fetch_task task allocate stack on external memory[0m
+[0;32mI (4575) AUDIO_THREAD: The recorder_task task allocate stack on external memory[0m
+[0;32mI (4661) AUDIO_RECORDER: RECORDER_CMD_TRIGGER_START[0m
+[0;31mE (4661) DISPATCHER: exe first list: 0x0[0m
+[0;31mE (4661) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4661) DISPATCHER: dispatcher_event_task is running...[0m
+[0;32mI (4661) COZE_SOCKET: rec_engine_cb - AUDIO_REC_WAKEUP_START[0m
+[0;32mI (4661) AUDIO_THREAD: The esp_dispatcher task allocate stack on internal memory[0m
+[0;31mE (4663) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4665) user_api: User event: Standby[0m
+[0;32mI (4664) AUDIO_THREAD: The voice_read_task task allocate stack on external memory[0m
+[0;32mI (4745) AUDIO_THREAD: The audio_play task allocate stack on external memory[0m
+[0;31mE (4746) mqtt_example: MQTT client not initialized[0m
+[0;32mI (4746) STORAGE: Opening NVS handle - partition: config_data, namespace: wifi_config[0m
+[0;32mI (4747) STORAGE: Found partition config_data at address 0x15000[0m
+[0;31mE (4748) STORAGE: storage_load_bootstrap: 1[0m
+gatProvision url:http://agent.gizwitsapi.com/v2/devices/nb47c6f2/bootstrap
+Server: agent.gizwitsapi.com
+Port: 80
+Path: /v2/devices/nb47c6f2/bootstrap
+[0;32mI (4750) gsever: Generated passcode length: 10[0m
+Generated Request:
+GET /v2/devices/nb47c6f2/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: ZWCVJCRDEB
+X-Sign-Token: a784fcd57464ce795df9d4a682bef8fd4f389e31d3e9bf447ac75bd556957f43
+X-Trace-Id: 14c18d8a3906499f9baaa60c25c6105f
+
+
+[0;32mI (4754) https: Initiating HTTP request[0m
+server: agent.gizwitsapi.com
+port: 80
+content: GET /v2/devices/nb47c6f2/bootstrap HTTP/1.0
+Host: agent.gizwitsapi.com:80
+X-Sign-Method: sha256
+X-Sign-Nonce: ZWCVJCRDEB
+X-Sign-Token: a784fcd57464ce795df9d4a682bef8fd4f389e31d3e9bf447ac75bd556957f43
+X-Trace-Id: 14c18d8a3906499f9baaa60c25c6105f
+
+
+[0;32mI (4787) https: DNS lookup succeeded. IP=193.112.237.214[0m
+[0;32mI (4787) https: ... allocated socket[0m
+[0;32mI (4796) wifi:<ba-add>idx:1 (ifx:0, a4:1a:3a:ba:5d:f0), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4806) https: ... connected[0m
+[0;32mI (4807) https: ... socket send success[0m
+[0;32mI (4807) https: ... set socket receiving timeout success[0m
+[0;32mI (4829) https: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (4830) https: Starting again![0m
+Response: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-78f1ef3f63bc4858aa5dc63b40e409d7-1b8419ffe93bf2fd-00
+X-Sign-Etag: 65340d624222eeab7e04517478acb3b953eec6cfa5ffb2955d9aafe46f486d91
+Date: Mon, 31 Mar 2025 05:03:40 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10
+[0;32mI (4833) gsever: Response header: HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 63
+Connection: close
+Traceparent: 00-78f1ef3f63bc4858aa5dc63b40e409d7-1b8419ffe93bf2fd-00
+X-Sign-Etag: 65340d624222eeab7e04517478acb3b953eec6cfa5ffb2955d9aafe46f486d91
+Date: Mon, 31 Mar 2025 05:03:40 GMT
+
+address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+[0;32mI (4838) gsever: Status code: 200[0m
+[0;32mI (4838) gsever: Response body: address=114.132.156.204&port=1883&restart_time=360&tz_offset=10[0m
+separator: =114.132.156.204
+separator: =1883
+separator: =360
+separator: =10
+[0;32mI (4841) mqtt_example: mqtt_app_start[0m
+[0;32mI (4841) mqtt_example: MQTT Configuration:[0m
+[0;32mI (4841) mqtt_example:   Address: '114.132.156.204'[0m
+[0;32mI (4843) mqtt_example:   Port: '1883'[0m
+[0;32mI (4843) gsever: Generated passcode length: 10[0m
+Received message on topic: llm/nb47c6f2/config/response
+in_str:{"method":"websocket.auth.response","body":{"platform_type":1,"token_quota":434384,"coze_websocket":{"bot_id":"7487568756596768807","voice_id":"7486685630496555042","user_id":"nb47c6f2","conv_id":"7487793552504799282","access_token":"czs_lLLmnLb4LSBGRS5YyGtKorZGUjYi1o0rpbpU9cdMbRG1890hGQAOBovBCAVBj4Y8B","expires_in":3540}}}
+[0;32mI (5077) COZE_SOCKET: WebSocket Configuration:[0m
+[0;32mI (5077) COZE_SOCKET: URI: ws://ws.coze.cn/v1/chat?bot_id=7487568756596768807[0m
+[0;32mI (5077) COZE_SOCKET: Transport: TCP[0m
+[0;32mI (5078) COZE_SOCKET: Network timeout: 2000 ms[0m
+[0;32mI (5079) COZE_SOCKET: Registering WebSocket events...[0m
+[0;32mI (5079) COZE_SOCKET: Starting WebSocket client...[0m
+[0;32mI (5080) websocket_client: Started[0m
+[0;32mI (5080) COZE_SOCKET: WebSocket client initialized successfully[0m
+[0;32mI (5366) COZE_SOCKET: WebSocket 连接成功[0m
+[0;32mI (5367) COZE_SOCKET: init_config_message: {"id":"4515269","event_type":"chat.update","data":{"chat_config":{"auto_save_history":true,"conversation_id":"7487793552504799282","user_id":"nb47c6f2","meta_data":{},"custom_variables":{},"extra_params":{}},"need_play_prologue":true,"turn_detection": {"type": "server_vad","prefix_padding_ms": 300,"silence_duration_ms": 300},"input_audio":{"format":"pcm","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"output_audio":{"codec":"opus","opus_config":{"use_cbr":true,"frame_size_ms":60,"limit_config":{"period":1,"max_frame_num":60}},"speech_rate":0,"voice_id":"7486685630496555042"}}}[0m
+[0;32mI (5377) COZE_SOCKET: Sent init config message with event_id: 4515269[0m
+[0;32mI (5377) user_api: User event: Standby[0m
+[0;32mI (5479) COZE_SOCKET: set_recording: true[0m
+[0;32mI (5484) COZE_SOCKET: chat.created[0m
+[0;32mI (5538) COZE_SOCKET: Unknown event: chat.updated[0m
+[0;32mI (6779) WiFi: wifi_init finished.[0m
+MAC address: CCBA97005758
+Version: WS010407 
+[0;31mE (6780) sdkService: last_audio_time: 4625410, current_time: 5927715, offset_time: 1302305[0m
+[0;32mI (6780) main_task: Returned from app_main()[0m
+[0;31mE (8781) sdkService: last_audio_time: 4625410, current_time: 7928452, offset_time: 3303042[0m
+[0;32mI (9055) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (9056) COZE_SOCKET: input_audio_buffer.speech_started, no audio cache[0m
+[0;32mI (9057) user_api: User event: User speaking[0m
+[0;32mI (9163) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (9435) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (9882) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (10089) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;33mW (10091) audio processor: player pipe is already running state[0m
+[0;32mI (10091) user_api: User event: Standby[0m
+[0;32mI (10220) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;31mE (10228) COZE_SOCKET: error: {"event_type":"error","id":"5e409bd9-2498-4bbd-b960-5423923204f9","data":{"code":717990703,"msg":"We're currently experiencing server issues. Please try your request again after a short delay. If the problem persists, contact our support team."},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}m","codec":"pcm","sample_rate":16000,"channel":1,"bit_depth":16},"chat_config":{"conversation_id":"7487793552504799282","user_id":"nb47c6f2","auto_save_history":true},"turn_detection":{"type":"server_vad","prefix_padding_ms":300,"silence_duration_ms":300},"need_play_prologue":true},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}il":{"log�>��"021743397382340000000000000�>��0000ffff0a843735a0dc33"}}�Uu�>�����I=S�%�ew�u�G~��uGG��p�e�>��U�tT]Oď�U���ղ�u���_�Uu���>�����eUMAU�p�)USMUt�]��m��V�}�>���T�W}EW\v^w����]ut���Ty�UQ�>�����TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (10245) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (10249) audio processor: player pipe stop running[0m
+[0;32mI (10253) ERROR_MONITOR: Error report task created successfully[0m
+[0;32mI (10257) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (10268) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (10290) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;32mI (10317) ERROR_MONITOR: Error reported successfully, status: 200[0m
+[0;32mI (10318) ERROR_MONITOR: No stack trace provided[0m
+[0;31mE (10781) sdkService: last_audio_time: 4625410, current_time: 9928408, offset_time: 5302998[0m
+[0;32mI (11854) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (11856) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;31mE (11861) user_api: on_coze_plugin_notify: {"event_type":"conversation.chat.requires_action","id":"9fad433b-1b4f-4b16-97eb-1b15c4fe2470","data":{"id":"7487825423108440064","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397425,"completed_at":1743397427,"status":"requires_action","usage":{"token_count":0,"output_count":0,"input_count":0},"required_action":{"type":"submit_tool_outputs","submit_tool_outputs":{"tool_calls":[{"id":"8756989729935379171","type":"function","function":{"name":"audio_play","arguments":"{\"audio_play\":\"1.03\"}"}}]}},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}000ffff0a843735246486"}}il":{"log�>��"021743397382340000000000000�>��0000ffff0a843735a0dc33"}}�Uu�>�����I=S�%�ew�u�G~��uGG��p�e�>��U�tT]Oď�U���ղ�u���_�Uu���>�����eUMAU�p�)USMUt�]��m��V�}�>���T�W}EW\v^w����]ut���Ty�UQ�>�����TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (11907) COZE_SOCKET: Coze 返回音频完成[0m
+[0;31mE (12781) sdkService: last_audio_time: 4625410, current_time: 11928416, offset_time: 7303006[0m
+[0;31mE (14781) sdkService: last_audio_time: 4625410, current_time: 13928408, offset_time: 9302998[0m
+[0;31mE (16781) sdkService: last_audio_time: 4625410, current_time: 15928408, offset_time: 11302998[0m
+[0;31mE (18781) sdkService: last_audio_time: 4625410, current_time: 17928411, offset_time: 13303001[0m
+[0;31mE (20781) sdkService: last_audio_time: 4625410, current_time: 19928408, offset_time: 15302998[0m
+[0;31mE (22782) sdkService: last_audio_time: 4625410, current_time: 21929411, offset_time: 17304001[0m
+[0;31mE (24782) sdkService: last_audio_time: 4625410, current_time: 23929413, offset_time: 19304003[0m
+[0;32mI (26604) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (26606) COZE_SOCKET: input_audio_buffer.speech_started, no audio cache[0m
+[0;32mI (26606) user_api: User event: User speaking[0m
+[0;32mI (26711) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;31mE (26782) sdkService: last_audio_time: 4625410, current_time: 25929409, offset_time: 21303999[0m
+[0;32mI (27214) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (27273) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;32mI (27274) audio processor: player pipe start running[0m
+[0;32mI (27275) user_api: User event: Standby[0m
+[0;32mI (27383) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;31mE (27410) COZE_SOCKET: error: {"event_type":"error","id":"f6f26a23-e099-46c8-b3b0-44c2ac0efc5f","data":{"code":717990703,"msg":"We're currently experiencing server issues. Please try your request again after a short delay. If the problem persists, contact our support team."},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}il":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}_tool_outputs":{"tool_calls":[{"id":"8756989729935379171","type":"function","function":{"name":"audio_play","arguments":"{\"audio_play\":\"1.03\"}"}}]}},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}000ffff0a843735246486"}}il":{"log�>��"021743397382340000000000000�>��0000ffff0a843735a0dc33"}}�Uu�>�����I=S�%�ew�u�G~��uGG��p�e�>��U�tT]Oď�U���ղ�u���_�Uu���>�����eUMAU�p�)USMUt�]��m��V�}�>���T�W}EW\v^w����]ut���Ty�UQ�>�����TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (27428) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (27430) audio processor: player pipe stop running[0m
+[0;32mI (27431) ERROR_MONITOR: Error report task created successfully[0m
+[0;32mI (27438) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (27441) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (27451) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;32mI (27465) ERROR_MONITOR: Error reported successfully, status: 200[0m
+[0;32mI (27466) ERROR_MONITOR: No stack trace provided[0m
+[0;31mE (28782) sdkService: last_audio_time: 4625410, current_time: 27929414, offset_time: 23304004[0m
+[0;32mI (29253) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (29257) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;31mE (29262) user_api: on_coze_plugin_notify: {"event_type":"conversation.chat.requires_action","id":"327f9dd5-08c2-4fd8-8f61-f8dcf1a09030","data":{"id":"7487826569902178339","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397443,"completed_at":1743397444,"status":"requires_action","usage":{"token_count":0,"output_count":0,"input_count":0},"required_action":{"type":"submit_tool_outputs","submit_tool_outputs":{"tool_calls":[{"id":"2936170019477875890","type":"function","function":{"name":"audio_play","arguments":"{\"audio_play\":\"1.03\"}"}}]}},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}000ffff0a843735246486"}}il":{"log�>��"021743397382340000000000000�>��0000ffff0a843735a0dc33"}}�Uu�>�����I=S�%�ew�u�G~��uGG��p�e�>��U�tT]Oď�U���ղ�u���_�Uu���>�����eUMAU�p�)USMUt�]��m��V�}�>���T�W}EW\v^w����]ut���Ty�UQ�>�����TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (29316) COZE_SOCKET: Coze 返回音频完成[0m
+[0;31mE (30783) sdkService: last_audio_time: 4625410, current_time: 29930420, offset_time: 25305010[0m
+[0;31mE (32783) sdkService: last_audio_time: 4625410, current_time: 31930408, offset_time: 27304998[0m
+[0;31mE (34783) sdkService: last_audio_time: 4625410, current_time: 33930409, offset_time: 29304999[0m
+[0;31mE (36783) sdkService: last_audio_time: 4625410, current_time: 35930420, offset_time: 31305010[0m
+[0;31mE (38783) sdkService: last_audio_time: 4625410, current_time: 37930418, offset_time: 33305008[0m
+[0;32mI (39995) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (39996) COZE_SOCKET: input_audio_buffer.speech_started, no audio cache[0m
+[0;32mI (39997) user_api: User event: User speaking[0m
+[0;32mI (40121) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (40658) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;31mE (40783) sdkService: last_audio_time: 4625410, current_time: 39930410, offset_time: 35305000[0m
+[0;32mI (40867) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (41114) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;32mI (41115) audio processor: player pipe start running[0m
+[0;32mI (41115) user_api: User event: Standby[0m
+[0;32mI (41221) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (41237) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (41240) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (41253) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;31mE (42783) sdkService: last_audio_time: 4625410, current_time: 41930407, offset_time: 37304997[0m
+[0;32mI (42998) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (43002) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;31mE (43006) user_api: on_coze_plugin_notify: {"event_type":"conversation.chat.requires_action","id":"7a1725ac-2f32-4750-9ef0-8d6ee01f5ff3","data":{"id":"7487826569902227491","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397456,"completed_at":1743397458,"status":"requires_action","usage":{"token_count":0,"output_count":0,"input_count":0},"required_action":{"type":"submit_tool_outputs","submit_tool_outputs":{"tool_calls":[{"id":"5318585129890923704","type":"function","function":{"name":"audio_play","arguments":"{\"audio_play\":\"1.03\"}"}}]}},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}000ffff0a843735246486"}}il":{"log�>��"021743397382340000000000000�>��0000ffff0a843735a0dc33"}}�Uu�>�����I=S�%�ew�u�G~��uGG��p�e�>��U�tT]Oď�U���ղ�u���_�Uu���>�����eUMAU�p�)USMUt�]��m��V�}�>���T�W}EW\v^w����]ut���Ty�UQ�>�����TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (43057) COZE_SOCKET: Coze 返回音频完成[0m
+[0;31mE (44783) sdkService: last_audio_time: 4625410, current_time: 43930409, offset_time: 39304999[0m
+[0;32mI (46054) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (46055) COZE_SOCKET: input_audio_buffer.speech_started, no audio cache[0m
+[0;32mI (46055) user_api: User event: User speaking[0m
+[0;32mI (46163) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;33mW (46164) audio processor: player pipe is already running state[0m
+[0;32mI (46164) user_api: User event: Standby[0m
+[0;32mI (46277) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (46287) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (46292) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (46299) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;31mE (46783) sdkService: last_audio_time: 4625410, current_time: 45930411, offset_time: 41305001[0m
+[0;32mI (47459) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (47517) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (47949) COZE_SOCKET: agent_is_pushing: true[0m
+[0;32mI (47959) COZE_SOCKET: es8311: set mic gain to less sensitive[0m
+[0;33mW (47959) audio processor: player pipe is already running state[0m
+[0;32mI (47960) user_api: User event: AI speaking[0m
+[0;32mI (48062) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (48080) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (48152) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (48156) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (48160) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (48783) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (49783) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (50014) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (50023) COZE_SOCKET: conversation.chat.completed: {"event_type":"conversation.chat.completed","id":"0b2e73c1-2350-411c-bd19-3de7305a2338","data":{"id":"7487826569902276643","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397461,"completed_at":1743397463,"status":"completed","usage":{"token_count":3834,"output_count":54,"input_count":3780},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}F7pw3H6Xhbj/aIanP2Wt9dfNuwElDhAI0lU/yJkdcRSTCHsS09XiGEA28GdFGnt94u70wPImj2H+QvwoTThuEOhgLft9h2iAP+HR5I5N5LO077I/7Am2AFXcGzzHVexMN867HLxJJZRNpAj095kmSh/N+ZPUcLLB1rqeTSXwgPMvbxPD44a46QXUgsRXwcf8axHCsdjtnahYUOR+9ISCFOjFxISCFOjFtkJBCplZekJBCplZegFe98MET9xQWWTz/ln/H/lmRv/lmqAAAAA","content_type":"audio","chat_id":"7487826569902276643","section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}��TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (50038) mqtt_example: Token report sent successfully: {
+    "method": "token.report",
+    "body": {
+        "total": 3834,
+        "output": 54,
+        "input": 3780
+    }
+}[0m
+[0;32mI (50039) COZE_SOCKET: Token usage - Total: 3834, Output: 54, Input: 3780[0m
+[0;33mW (50088) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5
+[0m
+[0;32mI (50088) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=31346
+[0m
+[0;32mI (50783) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (51783) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (52783) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (53785) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (54785) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (55439) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (55441) user_api: User event: Standby[0m
+[0;32mI (55545) COZE_SOCKET: Buffer empty, stopping playback[0m
+[0;31mE (55785) sdkService: last_audio_time: 53932729, current_time: 54932409, offset_time: 999680[0m
+[0;31mE (57785) sdkService: last_audio_time: 53932729, current_time: 56932415, offset_time: 2999686[0m
+[0;31mE (59785) sdkService: last_audio_time: 53932729, current_time: 58932408, offset_time: 4999679[0m
+[0;31mE (61785) sdkService: last_audio_time: 53932729, current_time: 60933210, offset_time: 7000481[0m
+[0;31mE (63788) sdkService: last_audio_time: 53932729, current_time: 62935410, offset_time: 9002681[0m
+[0;31mE (65789) sdkService: last_audio_time: 53932729, current_time: 64936410, offset_time: 11003681[0m
+[0;31mE (67789) sdkService: last_audio_time: 53932729, current_time: 66936420, offset_time: 13003691[0m
+[0;31mE (69789) sdkService: last_audio_time: 53932729, current_time: 68936408, offset_time: 15003679[0m
+[0;31mE (71790) sdkService: last_audio_time: 53932729, current_time: 70937456, offset_time: 17004727[0m
+[0;32mI (72692) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (72694) COZE_SOCKET: input_audio_buffer.speech_started, no audio cache[0m
+[0;32mI (72694) user_api: User event: User speaking[0m
+[0;32mI (72817) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (72822) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;33mW (72823) audio processor: player pipe is already running state[0m
+[0;32mI (72823) user_api: User event: Standby[0m
+[0;32mI (72930) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (72940) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (72945) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (72951) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;31mE (73790) sdkService: last_audio_time: 53932729, current_time: 72937410, offset_time: 19004681[0m
+[0;32mI (74001) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (74057) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (74603) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (74636) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (74641) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (74644) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (74765) COZE_SOCKET: agent_is_pushing: true[0m
+[0;32mI (74777) COZE_SOCKET: es8311: set mic gain to less sensitive[0m
+[0;33mW (74780) audio processor: player pipe is already running state[0m
+[0;32mI (74780) user_api: User event: AI speaking[0m
+[0;32mI (74881) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (75790) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (75812) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (75815) COZE_SOCKET: conversation.chat.completed: {"event_type":"conversation.chat.completed","id":"fda98467-2a3d-4d93-b9d6-0233704dbbb6","data":{"id":"7487826569902325795","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397488,"completed_at":1743397490,"status":"completed","usage":{"token_count":3888,"output_count":39,"input_count":3849},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}3snDBrG8p0zCS9MDPHCIq41bz/X8bE74y96+Hjpz/ZG227xCUPtdNxfheIv/S9eNvmhRGopOSbMnPpY2HqzcFKvML5wIax+hhPcgh1Yey1QOXbb9McDCN+IvitbA3eZz7KCjp7dNKLcdxMUfzvbS+Z8nvIm2siy+gCzD99WF9ZA3ZpIqIffNLz8FPta3QeyvRAbgrNkxO4WdWfMgPgGwXXjuifsPje7ygnv4SHz9uBifDfW1JcR8mo4WKqX/DihWKXOLBd+HhP91n9ZAAAA","content_type":"audio","chat_id":"7487826569902325795","section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}��TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (75833) mqtt_example: Token report sent successfully: {
+    "method": "token.report",
+    "body": {
+        "total": 3888,
+        "output": 39,
+        "input": 3849
+    }
+}[0m
+[0;32mI (75835) COZE_SOCKET: Token usage - Total: 3888, Output: 39, Input: 3849[0m
+[0;33mW (75852) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5
+[0m
+[0;32mI (75852) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=9258
+[0m
+[0;32mI (76329) COZE_SOCKET: input_audio_buffer.speech_started[0m
+[0;32mI (76330) COZE_SOCKET: input_audio_buffer.speech_started, clean audio cache[0m
+[0;32mI (76331) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (76333) user_api: User event: User speaking[0m
+[0;32mI (76438) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (76648) COZE_SOCKET: input_audio_buffer.speech_stoped[0m
+[0;33mW (76648) audio processor: player pipe is already running state[0m
+[0;32mI (76649) user_api: User event: Standby[0m
+[0;32mI (76754) COZE_SOCKET: Unknown event: conversation.audio_transcript.update[0m
+[0;32mI (76765) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (76767) COZE_SOCKET: Unknown event: conversation.chat.created[0m
+[0;32mI (76771) COZE_SOCKET: Coze 返回会话进行中[0m
+[0;31mE (76791) sdkService: last_audio_time: 74937758, current_time: 75939032, offset_time: 1001274[0m
+[0;32mI (77807) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (77872) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (78201) COZE_SOCKET: agent_is_pushing: true[0m
+[0;32mI (78225) COZE_SOCKET: es8311: set mic gain to less sensitive[0m
+[0;33mW (78226) audio processor: player pipe is already running state[0m
+[0;32mI (78226) user_api: User event: AI speaking[0m
+[0;32mI (78327) COZE_SOCKET: Buffer reached threshold (0.1%), starting playback[0m
+[0;32mI (78418) COZE_SOCKET: Unknown event: conversation.message.delta[0m
+[0;32mI (78454) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (78458) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (78461) COZE_SOCKET: Unknown event: conversation.message.completed[0m
+[0;32mI (78794) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (79584) COZE_SOCKET: Coze 返回音频完成[0m
+[0;32mI (79587) COZE_SOCKET: conversation.chat.completed: {"event_type":"conversation.chat.completed","id":"dd954b00-12ae-4317-9962-359dd90cd053","data":{"id":"7487826569902374947","conversation_id":"7487793552504799282","bot_id":"7487568756596768807","created_at":1743397492,"completed_at":1743397494,"status":"completed","usage":{"token_count":3944,"output_count":53,"input_count":3891},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}A6XyQuh4mbRkrwdoJ1ydi5lTl7aIkBn6Xqyo+0nERIypuVALUwbJPOREfB6wEoftjnu6HJuIQfEDQ1+nynd7pqBayeDTl3ACH0mrm2ron9/Oa5Cg7s3vuCTAmfpFB8hh9VP/HQmMOetigrwk86cOur7Puxw6tgmqpVFd0f+cx6k9r8jHzzvz+m434cVN9+HgRSEgFtOzadonXfteZH7/A9PkvucQSEghToxbT+ZTes4WNIUYWKdYGYZgKH4zjF5xmnt916rqO9ZhKKgAAAA","content_type":"audio","chat_id":"7487826569902374947","section_id":"7487793552504799282"},"detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}}��TU����}tXEMU����Q���QT\�|�>��U�u�J_��}�]W�wT}U��wW�mU�>���Nq��UOqUs�QM]WQ��W`ԴU��>���d��L�Oul���Tt�Pt�TQ���W�v�>��]vd�D}�ST��E�B]��}]v��u��}�>��V\��W�]u��]M]NW�Q�]�UNJNl5��>��uCQ�5on_u���WmQpUT�U�u���t��>��\T���Q}}]�UFOUO�uuU}��w�^���>���x�P�]��4��}]��|�]u}ߗ}W��>��u��1�_���U]�I}��~]_UE����*>�������}ׄy}�y�E_D�5��T@">��\���/�[UtU֥U�s����W�U�QX:>���T@��U�?�p�eU}�8U���O�W][�T2>�������K;<��D[0m
+[0;32mI (79606) mqtt_example: Token report sent successfully: {
+    "method": "token.report",
+    "body": {
+        "total": 3944,
+        "output": 53,
+        "input": 3891
+    }
+}[0m
+[0;32mI (79607) COZE_SOCKET: Token usage - Total: 3944, Output: 53, Input: 3891[0m
+[0;33mW (79653) mqtt_example: Event dispatched from event loop base=MQTT_EVENTS, event_id=5
+[0m
+[0;32mI (79654) mqtt_example: MQTT_EVENT_PUBLISHED, msg_id=34779
+[0m
+[0;32mI (79794) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (80794) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (81795) sdkService: Agent is speaking, updating last audio time[0m
+[0;32mI (82795) sdkService: Agent is speaking, updating last audio time[0m
+[0;31mE (83362) KEY: button_rec_event_handler: 0[0m
+[0;31mE (83362) KEY: KEY_EVENT_REC_BREAK[0m
+[0;32mI (83362) KEY: key_event_handler event: 0[0m
+[0;33mW (83362) KEY: Unknown key event: 0[0m
+[0;32mI (83363) KEY: key_event_handler event: 3[0m
+[0;32mI (83363) COZE_SOCKET: run break[0m
+[0;32mI (83367) COZE_SOCKET: es8311: set mic gain to normal[0m
+[0;32mI (83370) audio processor: player pipe stop running[0m
+[0;32mI (83373) COZE_SOCKET: Cancel message sent successfully[0m
+[0;32mI (83451) COZE_SOCKET: conversation.chat.canceled: {"event_type":"conversation.chat.canceled","id":"6bf42c5a-7e76-4717-a2a9-a2926431df82","detail":{"logid":"02174339742095100000000000000000000ffff0a843735246486"}},"bot_id":"7487568756596768807","created_at":1743397492,"completed_at":1743397494,"status":"completed","usage":{"token_count":3944,"output_count":53,"input_count":3891},"section_id":"7487793552504799282"},"detail":{"logid":"02174339742095[0m
+[0;32mI (83456) user_api: User event: Standby[0m
+[0;31mE (83463) KEY: button_rec_event_handler: 1[0m
+[0;32mI (83463) KEY: KEY_EVENT_REC_STOP[0m
+[0;32mI (83463) KEY: key_event_handler event: 5[0m
+[0;32mI (83656) COZE_SOCKET: rec_engine_cb - AUDIO_REC_VAD_START[0m
+[0;31mE (83763) KEY: button_rec_event_handler: 2[0m
+[0;31mE (83795) sdkService: last_audio_time: 81942715, current_time: 82942510, offset_time: 999795[0m
+[0;32mI (84672) COZE_SOCKET: rec_engine_cb - AUDIO_REC_VAD_END[0m
