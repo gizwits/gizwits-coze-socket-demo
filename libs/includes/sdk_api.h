@@ -31,8 +31,6 @@ const char* sdk_get_software_version(void);
 /* 重置模组 （清除wifi信息和解除绑定关系) */
 /* 调用结束后会触发模组重启进入待配网状态 */
 void sdk_wifi_reset( void );
-/* 电池模式下关机*/
-void sdk_power_off( void );
 /* 录音开始 */
 void sdk_start_record(void);
 /* 录音结束 */

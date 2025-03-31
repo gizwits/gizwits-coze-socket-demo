@@ -2,6 +2,8 @@
 
 Gizwits coze demo
 
+[https://github.com/gizwits/gizwits-coze-socket-demo](https://github.com/gizwits/gizwits-coze-socket-demo)
+
 ## 系统概述
 
 该系统是基于ESP音频开发板构建的，实现了以下主要功能：
@@ -19,9 +21,9 @@ Gizwits coze demo
 
 ```
 idf.py menuconfig
-
-audio_hal 里选择您的board
 ```
+audio_hal 里选择您的board
+
 
 ## SDK集成
 
@@ -37,6 +39,14 @@ sdk_init(HARD_VERSION, SOFT_VERSION, SDK_ACTIVED_MODE_BUTTON_AND_WAKEUP);
 ## 构建和运行
 ```c
 idf.py build flash monitor
+```
+
+## 烧录授权
+auth_data.bin 请联系我们获取
+
+需要您提供日志里打印的 mac 地址
+```
+esptool.py write_flash 0x744000 auth_data.bin
 ```
 
 ## 下一步

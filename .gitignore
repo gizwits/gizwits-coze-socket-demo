@@ -1,0 +1,9 @@
+build
+.cache
+sdkconfig.old
+managed_components
+.vscode
+cmake-build-debug/
+dependencies.lock
+.idea/
+target/
