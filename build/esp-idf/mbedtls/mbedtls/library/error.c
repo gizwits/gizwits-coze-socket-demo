@@ -1,1 +1,0 @@
-/Users/Kylewang/Documents/Project/gizwits-esp-adf/esp-idf/components/mbedtls/mbedtls/library/error.c
