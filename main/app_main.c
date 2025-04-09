@@ -89,10 +89,12 @@ void app_main(void)
 
     init_board();
 
-    callback_init();
     sdk_init(HARD_VERSION, SOFT_VERSION, SDK_ACTIVED_MODE_SERVER_VAD);
+    callback_init();
     bool is_config_wifi = get_is_config_wifi();
     bool is_connected_wifi = get_wifi_is_connected();
+
+    print_heap_info(TAG, NULL);
 
     if(is_config_wifi == false) {
         user_set_volume(80);
